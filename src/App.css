@@ -1,0 +1,162 @@
+html{
+  transition: all 0.3s ;
+  overflow-y: scroll;
+  background-color: var(--primary);
+}
+.App{
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Trispace', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  
+  
+
+  min-height: 100vh;
+  
+   
+}
+.head{
+  /* position: absolute;
+  top: 0px; */
+  backdrop-filter: blur(100px);
+ 
+  
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr repeat(3, max-content); 
+  grid-template-areas: 'header1 header2 header3 header4'
+                       ;
+  height: 4rem; 
+  width:100%;
+  margin: 0%;  
+  
+  align-items: flex-start;
+  position:fixed;
+  top: 0px;       
+  transition: all .2s ease-in-out; 
+  z-index: 66;   
+}
+.name{
+  grid-column-start: header1;
+  grid-column-end: header2;
+  
+  justify-self: start;
+
+  
+}
+.hover:hover{
+  transform: scale(1.1);
+  z-index: 65;
+  color: var(--green); 
+}
+.about{
+  grid-column-start:header3;
+  justify-self: end;
+  
+  margin-right: .8rem;
+ 
+  
+}
+.about:active{
+  color: var(--green); 
+}
+.toggle{
+  grid-column-start:header4;
+  /* justify-self: end; */
+ 
+  
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  /* width:min-content; */
+  height:fit-content;
+}
+               .moon{
+                display: var(--displaym);
+                transform: scale(.8);
+               }
+               .sun{
+                display:var(--display);
+              animation: rotate .25s linear   .8s;
+              }
+              .moon{
+              animation: rotate .2s linear   .8s;
+              }
+                @keyframes rotate
+                {
+                  0%{
+                    transform: rotate(0deg);
+                  }
+                  100%{
+                    transform: rotate(360deg);
+                  }
+               }
+    @media screen and (min-width: 600px) 
+    {
+      .toggle{
+        
+      }
+      #sun{
+        transform: scale(1.2);
+        
+      }
+      #moon{
+        transform: scale(.81);
+        
+      }
+    }
+  #moon,#sun{
+    fill: var(--fontcolor);
+  }
+.foot{
+
+  
+  padding-top: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns:  repeat(3, minmax(70px,70px)) ;
+  /* grid-template-areas: 'header1 header2 header3 '
+                       ; */
+  height: 2rem; 
+  width:100%;
+  margin: 0px;  
+  
+  /* position: fixed; */
+
+ 
+ align-self: flex-end;
+   align-content: start;
+  justify-content: center;
+}
+.links{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.link{
+ 
+  font-size: .8rem;
+  /* transition: all .3s ease-in-out; */
+  font-weight: 600;
+   
+}
+.link:hover{
+  
+  color:var(--green); ;
+  font-weight: 900;
+ /* font-size: .9rem; */
+}
+::-webkit-scrollbar{
+  
+}
+::-webkit-scrollbar-track{
+ background-color: var(--primary);
+
+}
+::-webkit-slider-thumb{
+  background-color: var(--grey); 
+  
+}
