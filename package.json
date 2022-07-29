@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "@types/react-helmet": "^6.1.5"
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
