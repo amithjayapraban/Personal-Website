@@ -59,7 +59,7 @@ function App() {
         </Routes>
          
        
-          <Foot/>
+          {/* <Foot/> */}
           
         
         </Router>
