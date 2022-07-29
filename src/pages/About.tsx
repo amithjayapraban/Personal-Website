@@ -8,7 +8,7 @@ export default function About() {
         <div className='col-start-2 row-start-2  col-end-3 flex'>
         <div className='w-[200px] mb-5 md:mb-10 h-[200px]  ml-[0px]   justify-self-start border-double border-[0px]  border-fontcolor boxes  '>
         </div>
-          <img className='z-10 w-[200px] translate-x-[-185px] translate-y-[15px] mb-5 md:mb-10 h-[200px]' src="/public/amith.jpeg" />
+          <img className='z-10 w-[200px] translate-x-[-185px] translate-y-[15px] mb-5 md:mb-10 h-[200px]' src="/amith.jpeg" />
           </div>
           <div className='row-start-2 self-center mt-[12rem]  ml-[-20px] col-start-2 col-end-3'  >
           <p className=' col-start-2 md:text-xl text-link text-lg col-end-3 px-7 text-left  '>Front-end developer from Kerala, India.</p>
@@ -18,13 +18,13 @@ export default function About() {
           </div>
           <div className="self-end row-start-2  col-start-2 ml-[10px] cursor-pointer col-end-3  flex justify-start">
        <a href="https://www.linkedin.com/in/amithjayapraban/" target='_blank' className='link cursor-pointer rounded-[50%] linkedin'>
-       <img src="/public/linkedin.svg" />
+       <img src="/linkedin.svg" />
        </a>
        <a href="https://github.com/amithjayapraban" target='_blank'  className='link ml-4 mr-4 github'>
-       <img src="/public/github.svg" />
+       <img src="/github.svg" />
        </a> 
        <a href="https://instagram.com/amithjayapraban" target='_blank'  className='link insta'>
-       <img src="/public/instagram.svg" />
+       <img src="/instagram.svg" />
        </a> 
        </div> 
         </div>
