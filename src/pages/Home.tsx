@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import Transition from './Transition';
 import { motion } from "framer-motion";
 import Foot from './Foot';
+import ScrollToTop from '../ScrollToTop';
 function Home() {
   function handleScroll() {
     var a:any = document.getElementById('section1');
@@ -19,8 +20,9 @@ function Home() {
   
   return (
     <Transition>
-    <div className='flex flex-col md:px-[160px] px-7 '>
-      <section className="md:min-h-[80vh] min-h-[50vh] flex flex-col justify-center" id='section1' onScroll={handleScroll}> 
+      
+    <div className='flex flex-col min-h-[90vh] md:px-[160px] px-7 '>
+      <section className="md:min-h-[30vh] min-h-[30vh] mt-[6rem] md:mt-[7rem] flex flex-col  justify-center" id='section1' onScroll={handleScroll}> 
    <motion.div 
             variants={animationConfiguration}
             initial="initial"
@@ -34,15 +36,15 @@ function Home() {
       </section>
       
 
-    <section className="md:min-h-[50vh] min-h-[40vh]  flex flex-col  ">
-          <h1 className='text-sm mb-3 cursor-pointer md:text-xl'>Projects</h1>     
+    <section className="md:min-h-[30vh] min-h-[30vh]  flex flex-col  ">
+          <h1 className='text-sm mb-7 cursor-pointer  self-center md:self-start md:text-xl'>Projects</h1>     
           <div className='flex flex-col  md:flex-row'>
 
 
 
-      <a href="https://sorah-5c20wqrjh-amithjayapraban.vercel.app" target="_blank" className='flex  '>
-        <div className='w-[200px] mb-5 md:mb-10 h-[200px]  ml-[0px]   self-center justify-self-center md:justify-self-start border-double border-[0px]  border-fontcolor boxes2   '>
-        <div className='z-10 self-start translate-x-[10px] text-gray-400 text-xs flex flex-col justify-center bg-cyan  translate-y-[-195px] mb-5 p-5 text-left md:mb-10 h-[200px] w-[200px] '><h1 className='text-xl text-blue '>Sorah </h1> <p className='text-fend mb-2'>Chat App</p> <p className=''>#React #Express #Socket.io #MongoDB</p></div>
+      <a href="https://sorah-5c20wqrjh-amithjayapraban.vercel.app" target="_blank" className='flex flex-col md:flex-row md:mr-[0px] mr-[15px] '>
+        <div className='w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   self-center justify-self-center md:justify-self-start border-double border-[0px]  border-fontcolor boxes2   '>
+        <div className='z-10 self-start translate-x-[10px] text-white text-xs flex flex-col justify-center bg-blue  translate-y-[-145px] mb-5 p-5 text-left md:mb-10 h-[150px] w-[150px] '><h1 className='text-xl text-cyan '>Sorah </h1> <p className='text-silver-400 mb-2'>Chat App</p> <p className=''>#React #Express #Socket.io #MongoDB</p></div>
               </div>
       
       </a>

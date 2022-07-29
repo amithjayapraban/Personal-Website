@@ -45,7 +45,7 @@ html{
 .name{
   grid-column-start: header1;
   grid-column-end: header2;
-  
+ 
   justify-self: start;
 
   
@@ -154,63 +154,67 @@ html{
   background-color: var(--grey); 
   
 }
-/* .box:before{
+.box:before{
   content: '';
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
  
-  background-image:url("/amith.jpeg");
-  background-position:top;
-  background-size: 250px;
-  transform: translate(10px ,10px);
+  background-color: var(--fend);
+  background-size: 150px;
+  transform: translate(05px ,5px);
+display: block;
+border:0px solid var(--fontcolor);
+}
+.box{
+  display: block;
+  background-color:var(--blue); 
+}
+.box::after{
+  content: '';
+  width: 150px;
+  height: 150px;
+ 
+ 
+  margin-left:5px ;
+  margin-top: 5px;
+  transform: translate(5px ,-145px);
+  
+  background-color: var(--cyan); 
+
+display: block;
+border:0px solid var(--fontcolor);
+}
+
+
+
+
+
+/* .photo::before{
+  content: '';
+  width: 150px;
+  height: 150px;
+  
+ 
+
+
+ background-color: var(--cyan);
+  transform: translate(10px ,-400px);
 display: block;
 border:0px solid var(--fontcolor);
 } */
 .boxes{
-  display: block;
-  background-color:var(--blue); 
-}
-.boxes::before{
-  content: '';
-  width: 200px;
-  height: 200px;
-  z-index: 6;
- 
-  margin-left:5px ;
-  margin-top: 5px;
- 
   
-  background-color: var(--fend);
-
-display: block;
-border:0px solid var(--fontcolor);
-}
-.boxes::after{
-  content: '';
-  width: 200px;
-  height: 200px;
-  z-index: 2;
- 
-/* background-color:var(--blue);  */
-
- background-color: var(--cyan);
-  transform: translate(10px ,-195px);
-display: block;
-border:0px solid var(--fontcolor);
-}
-.boxes{
-  z-index: 4;
 }
 
 .boxes2{
   display: block;
-  background-color:var(--blue); 
+  /* background-color:var(--cyan);  */
 }
 .boxes2::before{
   content: '';
-  width: 200px;
-  height: 200px;
-  z-index: 6;
+  width: 150px;
+  height: 150px;
+ 
  
   margin-left:5px ;
   margin-top: 5px;

@@ -34,8 +34,9 @@ function App() {
   
    
   return (
-   
+    
     <div className="App bg-primary  text-fontcolor ">
+      
     <Helmet>
                 <meta charSet="utf-8" />
                 <title>Amith Jayapraban</title>
@@ -48,10 +49,10 @@ function App() {
                 <link rel="canonical" href="http://amithjayapraban.tk" /> 
             </Helmet>
         <Router>
-        <ScrollToTop />
+        
         <Head Changetheme={Changetheme} />
         
-    
+        
         <Routes>
           
           <Route  path="/" element={<Home />} /> 

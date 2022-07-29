@@ -5,18 +5,22 @@ export default function About() {
     
       <Transition>
       <div className=' text-fontcolor h-[90vh] overflow-y-hidden  px-7  text-left text-sm md:text-sm grid  grid-flow-row grid-rows-[auto,auto,auto] '>
-        <div className='col-start-2 row-start-2  col-end-3 flex'>
-        <div className='w-[200px] mb-5 md:mb-10 h-[200px]  ml-[0px]   justify-self-start border-double border-[0px]  border-fontcolor boxes  '>
+        <div className='col-start-2  col-end-3 row-start-2 md:col-start-2 md:col-end-3  flex'>
+        <div className='w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   justify-self-start border-double border-[0px]  border-fontcolor box  '>
         </div>
-          <img className='z-10 w-[200px] translate-x-[-185px] translate-y-[15px] mb-5 md:mb-10 h-[200px]' src="/amith.jpeg" />
-          </div>
-          <div className='row-start-2 self-center mt-[12rem]  ml-[-20px] col-start-2 col-end-3'  >
+          <img className='z-10 w-[150px] translate-x-[-135px] translate-y-[15px] mb-5 md:mb-10 h-[150px]' src="/amith.jpeg" />
+        </div>
+        
+
+
+        
+          <div className='row-start-2 self-center mt-[8rem]  ml-[-30px] col-start-2 col-end-3'  >
           <p className=' col-start-2 md:text-xl text-link text-lg col-end-3 px-7 text-left  '>Front-end developer from Kerala, India.</p>
           <p className=' col-start-2 mt-1 mb-1 col-end-3 px-7 text-left ' >Passionate about Web and Photography.</p>
             {/* <p className=' col-start-2 col-end-3 px-7 text-left '>Currently pursuing MCA from College of Engineering, Trivandrum.</p>
            */}
           </div>
-          <div className="self-end row-start-2  col-start-2 ml-[10px] cursor-pointer col-end-3  flex justify-start">
+          <div className="self-end row-start-2  col-start-2 ml-[0px] cursor-pointer col-end-3  flex justify-start">
        <a href="https://www.linkedin.com/in/amithjayapraban/" target='_blank' className='link cursor-pointer rounded-[50%] linkedin'>
        <img src="/linkedin.svg" />
        </a>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Foot() {
   return (
     
-    <div className="flex transition-[1] links mb-3 self-center justify-center ">
+    <div className="flex transition-[1] links md:mb-7 mt-7 self-center justify-center ">
    
        <a href="https://www.linkedin.com/in/amithjayapraban/" target='_blank' className='link text-sm hover:text-[15px] linkedin'>
        Linkedin 
