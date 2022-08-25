@@ -21,7 +21,7 @@ function Home() {
   return (
     <Transition>
       
-    <div className='flex flex-col min-h-[90vh] md:px-[160px] px-7 '>
+    <div className='flex flex-col md:mt-10 min-h-[90vh] mt-[5vh] overflow-hidden relative  md:px-[160px] px-7 '>
       <section className="md:min-h-[30vh] min-h-[30vh] mt-[6rem] md:mt-[7rem] flex flex-col  justify-center" id='section1' onScroll={handleScroll}> 
    <motion.div 
             variants={animationConfiguration}
@@ -37,7 +37,7 @@ function Home() {
       
 
     <section className="md:min-h-[30vh] min-h-[30vh]  flex flex-col  ">
-          <h1 className='text-sm mb-7 cursor-pointer  self-center md:self-start md:text-xl'>Projects</h1>     
+          <h1 className='text-sm mb-7 cursor-pointer md:opacity-0 self-center  md:text-xl'>Projects</h1>     
           <div className='flex flex-col  md:flex-row'>
 
 
@@ -60,9 +60,9 @@ function Home() {
        
           </div>
     </section>
-    
+    {/* <div className="absolute bottom-0 left-0 right-0">
     <Foot  />
-   
+    </div> */}
     </div>
    </Transition> 
   )

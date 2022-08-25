@@ -1,16 +1,21 @@
-html{
-  transition: all 0.3s ;
-  overflow-y: scroll;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;  
+  transition: background-color 0.3s ;
   background-color: var(--primary);
+  
 }
+
 .App{
   margin: 0%;
+  transition: background-color 0.3s ;
   box-sizing: border-box;
-  font-family: 'Trispace', sans-serif;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;  
-  
+  background-color: var(--primary);
 /*   
 
   min-height: 100vh;
@@ -132,10 +137,10 @@ html{
 
 .link{
  
-  font-size: .8rem;
-  /* font-weight: 500; */
+
+  
   transition: all .3s ease-in-out;
-   font-family: sans-serif;
+  
    transition: all .1s ease;
 }
 .link:hover{

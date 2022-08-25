@@ -35,7 +35,7 @@ function App() {
    
   return (
     
-    <div className="App bg-primary  text-fontcolor ">
+    <div className="App bg-primary overflow-hidden max-h-screen  text-fontcolor ">
       
     <Helmet>
                 <meta charSet="utf-8" />
@@ -60,7 +60,7 @@ function App() {
         </Routes>
          
        
-          {/* <Foot/> */}
+        
           
         
         </Router>
