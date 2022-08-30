@@ -44,7 +44,7 @@ function Home() {
 
       <a href="https://sorah-g9fexwdlr-amithjayapraban.vercel.app" target="_blank" className='flex flex-col md:flex-row md:mr-[0px] mr-[15px] '>
         <div className='w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   self-center justify-self-center md:justify-self-start border-double border-[0px]  border-fontcolor boxes2   '>
-        <div className='z-10 self-start translate-x-[10px] text-white text-xs flex flex-col justify-center bg-blue  translate-y-[-145px] mb-5 p-5 text-left md:mb-10 h-[150px] w-[150px] '><h1 className='text-xl text-cyan '>Sorah </h1> <p className='text-silver-400 mb-2'>Chat App</p> <p className=''>#React #Express #Socket.io #MongoDB</p></div>
+        <div className='z-10 self-start translate-x-[10px] text-white text-xs flex flex-col justify-center bg-blue  translate-y-[-145px] mb-5 p-5 text-left md:mb-10 h-[150px] w-[150px] '><h1 className='text-xl text-cyan '>Sorah </h1> <p className='text-silver-400 mb-2'>Chat App</p> <p className=''>#React<br></br> #Express <br></br>#Socket.io<br></br> #MongoDB</p></div>
               </div>
       
       </a>
