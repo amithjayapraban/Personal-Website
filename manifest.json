@@ -1,16 +1,16 @@
 {
-    "name": "AMITH JAYAPRABAN",
-    "theme_color": "#171a23",
-    
-    "background_color": "#171a23",
-    "display": "fullscreen",
-    "icons": [
-      {
-        "src": "",
-        
-        "type": ""
-      }
-    ],
-    "scope": "/",
-    "start_url": "/"
-  }
+  "name": "AMITH JAYAPRABAN",
+  "theme_color": "#171a23",
+
+  "background_color": "#171a23",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "",
+
+      "type": ""
+    }
+  ],
+  "scope": "/",
+  "start_url": "/"
+}

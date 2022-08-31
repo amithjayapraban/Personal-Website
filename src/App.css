@@ -1,198 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  scroll-behavior: smooth;  
-  transition: background-color 0.3s ;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s;
   background-color: var(--primary);
-  
 }
 
-.App{
+.App {
   margin: 0%;
-  transition: background-color 0.3s ;
+  transition: background-color 0.3s;
   box-sizing: border-box;
-  
+
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   background-color: var(--primary);
-/*   
+  /*   
 
   min-height: 100vh;
    */
-   
 }
-.frontend{
-
-  text-shadow:  -2.5px -2.5px 0 var(--fend),-5px -5px 0 rgb(17, 44, 252);
+.frontend {
+  text-shadow: -2.5px -2.5px 0 var(--fend), -5px -5px 0 rgb(17, 44, 252);
 }
-.head{
+.head {
   /* position: absolute;
   top: 0px; */
   backdrop-filter: blur(100px);
- 
-  
+
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: 1fr repeat(3, max-content); 
-  grid-template-areas: 'header1 header2 header3 header4'
-                       ;
-  height: 4rem; 
-  width:100%;
-  margin: 0%;  
-  
+  grid-template-columns: 1fr repeat(3, max-content);
+  grid-template-areas: "header1 header2 header3 header4";
+  height: 4rem;
+  width: 100%;
+  margin: 0%;
+
   align-items: flex-start;
-  position:fixed;
-  top: 0px;       
-  transition: all .2s ease-in-out; 
-  z-index: 66;   
+  position: fixed;
+  top: 0px;
+  transition: all 0.2s ease-in-out;
+  z-index: 66;
 }
-.name{
+.name {
   grid-column-start: header1;
   grid-column-end: header2;
- 
+
   justify-self: start;
-
-  
 }
 
-.about{
-  grid-column-start:header3;
+.about {
+  grid-column-start: header3;
   justify-self: end;
-  
-  margin-right: .8rem;
- 
-  
+
+  margin-right: 0.8rem;
 }
 
-
-.toggle{
-  grid-column-start:header4;
+.toggle {
+  grid-column-start: header4;
   /* justify-self: end; */
- 
-  
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-  /* width:min-content; */
-  height:fit-content;
-}
-               .moon{
-                display: var(--displaym);
-                transform: scale(.8);
-               }
-               .sun{
-                display:var(--display);
-              animation: rotate .25s linear   .8s;
-              }
-              .moon{
-              animation: rotate .2s linear   .8s;
-              }
-                @keyframes rotate
-                {
-                  0%{
-                    transform: rotate(0deg);
-                  }
-                  100%{
-                    transform: rotate(360deg);
-                  }
-               }
-    @media screen and (min-width: 600px) 
-    {
-      .toggle{
-        
-      }
-      #sun{
-        transform: scale(1.2);
-        
-      }
-      #moon{
-        transform: scale(.81);
-        
-      }
-    }
-  #moon,#sun{
-    fill: var(--fontcolor);
-  }
-  #moon:hover,#sun:hover{
-    fill: var(--cyan);
-  }
-.foot{
 
-  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  /* width:min-content; */
+  height: fit-content;
+}
+.moon {
+  display: var(--displaym);
+  transform: scale(0.8);
+}
+.sun {
+  display: var(--display);
+  animation: rotate 0.25s linear 0.8s;
+}
+.moon {
+  animation: rotate 0.2s linear 0.8s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 600px) {
+  .toggle {
+  }
+  #sun {
+    transform: scale(1.2);
+  }
+  #moon {
+    transform: scale(0.81);
+  }
+}
+#moon,
+#sun {
+  fill: var(--fontcolor);
+}
+#moon:hover,
+#sun:hover {
+  fill: var(--cyan);
+}
+.foot {
   padding-top: 1rem;
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns:  repeat(3, minmax(70px,70px)) ;
+  grid-template-columns: repeat(3, minmax(70px, 70px));
   /* grid-template-areas: 'header1 header2 header3 '
                        ; */
-  height: 2rem; 
-  width:100%;
-  margin: 0px;  
-  
+  height: 2rem;
+  width: 100%;
+  margin: 0px;
+
   /* position: fixed; */
-
- 
- 
 }
 
-.link{
- 
+.link {
+  transition: all 0.3s ease-in-out;
 
-  
-  transition: all .3s ease-in-out;
-  
-   transition: all .1s ease;
+  transition: all 0.1s ease;
 }
-.link:hover{
-  
-  color:var(--link); ;
- 
+.link:hover {
+  color: var(--link);
 }
-::-webkit-scrollbar{
-  
+::-webkit-scrollbar {
 }
-::-webkit-scrollbar-track{
- background-color: var(--primary);
-
+::-webkit-scrollbar-track {
+  background-color: var(--primary);
 }
-::-webkit-slider-thumb{
-  background-color: var(--grey); 
-  
+::-webkit-slider-thumb {
+  background-color: var(--grey);
 }
-.box:before{
-  content: '';
+.box:before {
+  content: "";
   width: 150px;
   height: 150px;
- 
+
   background-color: var(--fend);
   background-size: 150px;
-  transform: translate(05px ,5px);
-display: block;
-border:0px solid var(--fontcolor);
-}
-.box{
+  transform: translate(05px, 5px);
   display: block;
-  background-color:var(--blue); 
+  border: 0px solid var(--fontcolor);
 }
-.box::after{
-  content: '';
+.box {
+  display: block;
+  background-color: var(--blue);
+}
+.box::after {
+  content: "";
   width: 150px;
   height: 150px;
- 
- 
-  margin-left:5px ;
+
+  margin-left: 5px;
   margin-top: 5px;
-  transform: translate(5px ,-145px);
-  
-  background-color: var(--cyan); 
+  transform: translate(5px, -145px);
 
-display: block;
-border:0px solid var(--fontcolor);
+  background-color: var(--cyan);
+
+  display: block;
+  border: 0px solid var(--fontcolor);
 }
-
-
-
-
 
 /* .photo::before{
   content: '';
@@ -207,26 +175,23 @@ border:0px solid var(--fontcolor);
 display: block;
 border:0px solid var(--fontcolor);
 } */
-.boxes{
-  
+.boxes {
 }
 
-.boxes2{
+.boxes2 {
   display: block;
   /* background-color:var(--cyan);  */
 }
-.boxes2::before{
-  content: '';
+.boxes2::before {
+  content: "";
   width: 150px;
   height: 150px;
- 
- 
-  margin-left:5px ;
+
+  margin-left: 5px;
   margin-top: 5px;
- 
-  
+
   background-color: var(--fend);
 
-display: block;
-border:0px solid var(--fontcolor);
+  display: block;
+  border: 0px solid var(--fontcolor);
 }

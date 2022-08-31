@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      
       colors: {
         primary: "var(--primary)",
         fontcolor: "var(--fontcolor)",
@@ -14,11 +11,9 @@ module.exports = {
         cyan: "var(--cyan)",
         pink: "var(--pink)",
         fend: "var(--fend)",
-        link:"var(--link)"
-         
-      }
-      
-    }
+        link: "var(--link)",
+      },
+    },
   },
   plugins: [],
-}
+};
