@@ -22,8 +22,8 @@ export default function About() {
             <p className=" mt-1 mb-1  text-xs md:text:sm ">
               Passionate about Web and Photography.
             </p>
-            {/* <p className=' col-start-2 col-end-3 px-7 text-left '>Currently pursuing MCA from College of Engineering, Trivandrum.</p>
-             */}
+            <p className=' mb-1  text-xs md:text:sm '>Currently pursuing MCA from College of Engineering, Trivandrum.</p>
+            
           </div>
 
           <div className="row-start-2 self-start mt-3 col-start-2 ml-[0px] cursor-pointer col-end-3 gap-4 flex justify-start">
