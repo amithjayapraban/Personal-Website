@@ -3,7 +3,7 @@ import Transition from "./Transition";
 export default function About() {
   return (
     <Transition>
-      <div className=" text-fontcolor overflow-hidden max-h-[90vh]  px-7  text-left text-sm md:text-sm grid  grid-flow-row grid-rows-[.5fr,1fr,.5fr] grid-cols-[.5fr,1fr,.5fr] ">
+      <div className=" text-fontcolor  overflow-y-hidden  px-7  text-left text-sm md:text-sm grid  grid-flow-row grid-rows-[.5fr,1fr,.5fr] grid-cols-[.5fr,1fr,.5fr] ">
         <div className="flex flex-col row-start-2 col-start-2 justify-center items-center">
           <div className="row-start-2 mr-8   h-[160px] md:self-start   flex ">
             <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box rounded-[2px] "></div>

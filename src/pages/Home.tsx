@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <Transition>
-      <div className="flex flex-col  md:mt-4  mt-[7rem]  overflow-hidden relative  md:px-[160px] px-7  w-full">
+      <div className="flex flex-col  md:mt-4  mt-[7rem]  overflow-hidden relative  md:px-[160px] px-7  w-[100vw]">
         <section
           className="md:min-h-[30vh] min-h-[max-content]  md:mt-[7rem] flex flex-col  justify-center"
           id="section1"
@@ -63,7 +63,7 @@ function Home() {
               className="rounded bg-primary transition  w-[100%] md:w-[100%]"
             >
               <div className=" border-[2px] h-[130px]  border-card  z-10 rounded self-start  text-fontcolor text-xs flex flex-col justify-center   p-5 text-left  ">
-                <h1 className="text-xl text-link ">{i.name} </h1>{" "}
+                <h1 className="text-2xl text-link ">{i.name} </h1>{" "}
                 <p className="text-silver-400 mb-2">{i.desc}</p>{" "}
                 <p className="">{i.tags}</p>
               </div>
