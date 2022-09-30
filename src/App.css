@@ -13,7 +13,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  align-items:center;
   /* background-color: var(--primary); */
   /*   
 
@@ -37,7 +38,7 @@ body {
   margin: 0%;
 
   align-items: flex-start;
-  position: fixed;
+  position:fixed;
   top: 0px;
   transition: all 0.2s ease-in-out;
   z-index: 66;
@@ -98,6 +99,7 @@ body {
 #sun {
   fill: var(--fontcolor);
 }
+ 
 #moon:hover,
 #sun:hover {
   fill: var(--cyan);

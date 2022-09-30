@@ -31,9 +31,9 @@ function Home() {
 
   return (
     <Transition>
-      <div className="flex flex-col md:mt-10 min-h-[90vh] mt-[5vh] overflow-hidden relative  md:px-[160px] px-7 ">
+      <div className="flex flex-col  md:mt-4  mt-[7rem]  overflow-hidden relative  md:px-[160px] px-7  w-full">
         <section
-          className="md:min-h-[30vh] min-h-[30vh] mt-[6rem] md:mt-[7rem] flex flex-col  justify-center"
+          className="md:min-h-[30vh] min-h-[max-content]  md:mt-[7rem] flex flex-col  justify-center"
           id="section1"
           onScroll={handleScroll}
         >
@@ -44,7 +44,7 @@ function Home() {
             exit="exit"
             transition={{ duration: 0.03 }}
           >
-            <div className=" flex flex-col mb-20 cursor-default items-center justify-center">
+            <div className=" flex flex-col md:mb-20 cursor-default items-center justify-center">
               <h1 className="md:text-8xl frontend justify-self-center  text-5xl text-cyan">
                 FRONTEND
               </h1>
@@ -55,12 +55,12 @@ function Home() {
           </motion.div>
         </section>
 
-        <section className="md:min-h-[30vh]  min-h-[30vh] flex flex-col items-center gap-3    ">
+        <section className="md:min-h-[30vh] mt-[4rem] md:mt-0  min-h-[30vh] flex flex-col items-center gap-3    ">
           {projects.map((i)=>{
             return (<a
               href={`${i.link}`}
               target="_blank"
-              className="rounded bg-primary transition  w-[80%] md:w-[80%]"
+              className="rounded bg-primary transition  w-[100%] md:w-[100%]"
             >
               <div className=" border-[2px] h-[130px]  border-card  z-10 rounded self-start  text-fontcolor text-xs flex flex-col justify-center   p-5 text-left  ">
                 <h1 className="text-xl text-link ">{i.name} </h1>{" "}

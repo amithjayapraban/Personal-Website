@@ -22,7 +22,7 @@ export default function Head({ Changetheme }: any) {
         <Link to="/"> AMITH JAYAPRABAN</Link>{" "}
       </p>
       <a
-        className="about transition-[1] self-center hover:text-link hover:scale-[1.1] text-sm md:text-lg cursor-pointer"
+        className="about transition-[1] self-center md:hover:text-link md:hover:scale-[1.1] text-sm md:text-lg cursor-pointer"
         onClick={() => {
           nav("/about");
         }}

@@ -38,7 +38,7 @@ function App() {
   return (
     //bg-primary
     <div className="App bg-transparent
-     overflow-hidden max-h-screen  text-fontcolor ">
+     overflow-y-hidden max-h-screen  text-fontcolor ">
      
       <Helmet>
         <meta charSet="utf-8" />
