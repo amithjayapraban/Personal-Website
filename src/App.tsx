@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Head from "./pages/Head";
 import Foot from "./pages/Foot";
 import ScrollToTop from "./ScrollToTop";
+import Scene from "./Scene";
 function App() {
   const [theme, setTheme]: any = useState("dark");
 
@@ -35,7 +36,10 @@ function App() {
   }
 
   return (
-    <div className="App bg-primary overflow-hidden max-h-screen  text-fontcolor ">
+    //bg-primary
+    <div className="App bg-transparent
+     overflow-hidden max-h-screen  text-fontcolor ">
+     
       <Helmet>
         <meta charSet="utf-8" />
         <title>Amith Jayapraban</title>
@@ -61,6 +65,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
+    
     </div>
   );
 }

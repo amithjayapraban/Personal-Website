@@ -6,16 +6,16 @@ export default function About() {
       <div className=" text-fontcolor h-[90vh] overflow-y-hidden  px-7  text-left text-sm md:text-sm grid  grid-flow-row grid-rows-[.5fr,1fr,.5fr] grid-cols-[.5fr,1fr,.5fr] ">
         <div className="flex flex-col row-start-2 col-start-2 justify-center items-center">
           <div className="row-start-2 mr-8   h-[160px] md:self-start   flex ">
-            <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box  "></div>
+            <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box rounded-[2px] "></div>
 
             <img
-              className="z-10 w-[150px] translate-x-[-135px] translate-y-[15px] md:translate-y-[15px]  mb-5 md:mb-10 h-[150px]"
+              className="z-10 rounded-[2px] w-[150px] translate-x-[-135px] translate-y-[15px] md:translate-y-[15px]  mb-5 md:mb-10 h-[150px]"
               src="/amith.jpeg"
             />
           </div>
           <div />
 
-          <div className="row-start-2 mt-5 md:self-start  flex flex-col ">
+          <div className="row-start-2 mt-5 md:self-start z-5 flex flex-col ">
             <p className="  md:text-xl  text-link text-sm   ">
               Front-end developer from Kerala, India.
             </p>

@@ -12,6 +12,7 @@ module.exports = {
         pink: "var(--pink)",
         fend: "var(--fend)",
         link: "var(--link)",
+        card:"var(--card)"
       },
     },
   },
