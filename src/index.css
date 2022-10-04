@@ -5,22 +5,22 @@
 :root {
   --primary: #ffffff;
   --fend: rgb(87, 68, 198);
-  --fontcolor: #4e4d4d;
+  --fontcolor: #464444;
   --green: rgb(253 224 71);
   --display: unset;
-  --displaym: none;
+  --mode:"light";
   --cyan: rgb(5, 254, 183);
   --pink: rgb(241, 25, 220);
   --blue: rgb(11, 30, 173);
   --link: rgb(11, 30, 173);
-  --card:#d3d3d3;;
+  --card:#dddddd;;
 }
 html[data-theme="dark"] {
-  --primary: #171a23;
+  --primary: #1a191d;
   /* --shadow: rgb(25, 109, 255); */
   --fontcolor: #ffffff;
   --display: none;
-  --displaym: unset;
+  --mode:"dark";
   --green: #fffb00;
   --blue: rgb(11, 30, 173);
   --fend: rgb(87, 68, 198);

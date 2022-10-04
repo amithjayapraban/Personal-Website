@@ -2,31 +2,32 @@ import React from "react";
 import Transition from "./Transition";
 export default function About() {
   return (
-    <Transition>
-      <div className=" text-fontcolor  overflow-y-hidden  px-7  text-left text-sm md:text-sm grid  grid-flow-row grid-rows-[.5fr,1fr,.5fr] grid-cols-[.5fr,1fr,.5fr] ">
-        <div className="flex flex-col row-start-2 col-start-2 justify-center items-center">
-          <div className="row-start-2 mr-8   h-[160px] md:self-start   flex ">
-            <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box rounded-[2px] "></div>
+ 
+      <div className="w-full   text-fontcolor  overflow-y-hidden  md:px-[160px] py-[4rem]   px-7  text-left text-sm md:text-sm flex flex-col  justify-start items-start ">
+          <Transition>
+          <div className=" mr-8 md:mt-20 mt-14 h-[160px]  px-1  flex ">
+            <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box rounded-[15px] "></div>
 
             <img
-              className="z-10 rounded-[2px] w-[150px] translate-x-[-135px] translate-y-[15px] md:translate-y-[15px]  mb-5 md:mb-10 h-[150px]"
+              className="z-10 rounded-[15px] w-[150px] translate-x-[-135px] translate-y-[15px] md:translate-y-[15px]  mb-5 md:mb-10 h-[150px]"
               src="/amith.jpeg"
             />
           </div>
           <div />
 
-          <div className="row-start-2 mt-5 md:self-start z-5 flex flex-col ">
-            <p className="  md:text-xl  text-link text-sm   ">
+          <div className=" mt-5 px-1 gap-5 flex flex-col w-[90%] md:w-[80%]">
+            <p className="frontend_about  md:text-4xl  text-link text-2xl font-[700]  ">
               Front-end developer from Kerala, India.
             </p>
-            <p className=" mt-1 mb-1  text-xs md:text:sm ">
+            <p className=" mt-1 font-[400]  text-xs md:text-[16px] ">
               Passionate about Web and Photography.
             </p>
-            <p className=' mb-1  text-xs md:text:sm '>Currently pursuing MCA from College of Engineering, Trivandrum.</p>
-            
+            <p className="font-[400]   mt-[-10px] text-xs md:text-[16px] ">
+              Currently pursuing MCA from College of Engineering, Trivandrum.
+            </p>
           </div>
 
-          <div className="row-start-2 self-start mt-3 col-start-2 ml-[0px] cursor-pointer col-end-3 gap-4 flex justify-start">
+          <div className="self-start mt-6 px-1 ml-[0px] cursor-pointer  gap-4 flex justify-start">
             <a
               href="https://www.linkedin.com/in/amithjayapraban/"
               target="_blank"
@@ -77,13 +78,11 @@ export default function About() {
               </svg>
             </a>
 
-            {/* <a href="https://instagram.com/amithjayapraban" target='_blank'  className='link h-[24px] w-[24px] insta bg-cyan rounded-md  '>
-              <img width="24px" height="24px" className='p-1  codepen' src="/codepen.png" />
-              
-            </a>     */}
+          
           </div>
+          </Transition>
         </div>
-      </div>
-    </Transition>
+    
+   
   );
 }

@@ -17,28 +17,33 @@ import Foot from "./pages/Foot";
 import ScrollToTop from "./ScrollToTop";
 import Scene from "./Scene";
 function App() {
-  const [theme, setTheme]: any = useState("dark");
+  const [theme, setTheme]: any = useState("light");
 
   useEffect(() => {
     var t: any = localStorage.getItem("data-theme");
-    setTheme(t);
-    document.documentElement.setAttribute("data-theme", t);
+    
+    if(t){document.documentElement.setAttribute("data-theme", t); setTheme(t);}
+    else{
+      document.documentElement.setAttribute("data-theme", theme);
+    }
   }, []);
 
   function Changetheme() {
     if (document.documentElement.getAttribute("data-theme") === "light") {
       document.documentElement.setAttribute("data-theme", "dark");
+      setTheme("dark");
       localStorage.setItem("data-theme", "dark");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
+      setTheme("light");
       localStorage.setItem("data-theme", "light");
     }
   }
 
   return (
     //bg-primary
-    <div className="App bg-transparent
-     overflow-y-hidden max-h-screen  text-fontcolor ">
+    <div className="App bg-transparent  overflow-y-hidden
+     text-fontcolor  ">
      
       <Helmet>
         <meta charSet="utf-8" />
@@ -58,7 +63,7 @@ function App() {
         <link rel="canonical" href="http://amithjayapraban.tk" />
       </Helmet>
       <Router>
-        <Head Changetheme={Changetheme} />
+        <Head Changetheme={Changetheme} theme={theme}/>
 
         <Routes>
           <Route path="/" element={<Home />} />
