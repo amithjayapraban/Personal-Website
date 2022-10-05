@@ -19,7 +19,7 @@ function Home() {
       name: "Sorah",
       desc: "MERN Stack Chat Application",
       tags:["React", "Express"," Socket.io"," MongoDB"],
-      link: "https://sorah-g9fexwdlr-amithjayapraban.vercel.app",
+      link: "https://sorah.vercel.app",
     },
     {
       name: "Nota",
@@ -44,12 +44,12 @@ function Home() {
             exit="exit"
             transition={{ duration: 0.03 }}
           >
-            <div className=" flex m-0 flex-col md:mb-20 cursor-default items-start ">
+            <div className=" flex  m-0 flex-col md:mb-20 cursor-default md:items-start items-center ">
         
-              <p className="lg:text-[150px] justify-self-end  md:text-8xl outline-none p-0  frontend font-[700]  text-[65px] text-fontcolor">
+              <p className="lg:text-[150px] justify-self-end  md:text-8xl outline-none p-0  frontend font-[700]  text-[65px]  text-fontcolor">
                 Frontend
               </p>
-              <p className="developer ml-[.5%] mt-[-20px] md:mt-0 justify-self-start font-[700] md:ml-[.4%] lg:ml-[.6%] text-fontcolor md:text-3xl text-2xl lg:text-5xl">
+              <p className="developer mt-[0px] md:mt-0 justify-self-start font-[700] md:ml-[.4%] lg:ml-[.6%] text-fontcolor md:text-3xl text-2xl lg:text-5xl">
                 Developer
               </p>
             </div>
@@ -70,7 +70,7 @@ function Home() {
                 <h1 className="md:text-3xl text-2xl projectname font-[700] text-link ">{i.name} </h1>{" "}
                 <p className="text-fontcolor text-sm font-[600] mb-2">{i.desc}</p>{" "}
                 <div className="flex gap-2">{i.tags.map((t:any)=>{
-                  return<div className="bg-card p-1  rounded-[4px]">{t}</div>
+                  return<div className="bg-card fronten p-1  rounded-[4px]">{t}</div>
                 })}
                 </div>
               </div>
