@@ -23,7 +23,7 @@ html[data-theme="dark"] {
   --mode:"dark";
   --green: #fffb00;
   --blue: rgb(11, 30, 173);
-  --fend: rgb(87, 68, 198);
+  /* --fend: rgb(87, 68, 198); */
   --link: rgb(5, 254, 183);
   --card:#2c303e;
 }

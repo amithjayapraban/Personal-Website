@@ -15,7 +15,7 @@ export default function About() {
           </div>
           <div />
 
-          <div className=" mt-5 px-1 gap-5 flex flex-col w-[90%] md:w-[80%]">
+          <div className=" mt-5 px-3 gap-5 flex flex-col w-[90%] md:w-[80%]">
             <p className="frontend_about  md:text-4xl  text-link text-2xl font-[700]  ">
               Front-end developer from Kerala, India.
             </p>
@@ -27,7 +27,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="self-start mt-6 px-1 ml-[0px] cursor-pointer  gap-4 flex justify-start">
+          <div className="self-start mt-6 px-3 ml-[0px] cursor-pointer  gap-4 flex justify-start">
             <a
               href="https://www.linkedin.com/in/amithjayapraban/"
               target="_blank"

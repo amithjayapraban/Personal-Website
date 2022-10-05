@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <Transition>
-      <div className="flex flex-col h-[100vh]    overflow-y-scroll relative  md:px-[160px] px-7  w-[100vw]">
+      <div className="flex flex-col  h-[100vh]  home  overflow-y-scroll relative  md:px-[160px] px-7  w-[100vw]">
         <section
           className="min-h-[40vh] md:min-h-[100vh] bg-gray-00   flex flex-col  justify-center"
           id="section1"
@@ -64,7 +64,7 @@ function Home() {
             return (<a
               href={`${i.link}`}
               target="_blank"
-              className="rounded bg-primary   w-[100%] md:self-start md:w-[60%]"
+              className="rounded transition-[1]   w-[100%] md:self-start md:w-[60%]"
             >
               <div className="  md:h-[200px] h-[130px]  z-10 rounded self-start  text-fontcolor text-xs flex flex-col justify-center   py-5 md:px-3 px-3 text-left  ">
                 <h1 className="md:text-3xl text-2xl projectname font-[700] text-link ">{i.name} </h1>{" "}

@@ -9,21 +9,21 @@ export default function Head({ Changetheme,theme }: any) {
 
   if (path === "/about") {
     document.querySelector(".about")?.classList.add("text-link");
-    document.querySelector(".about")?.classList.add("scale-[1.1]");
+    
   }
   if (path === "/") {
     document.querySelector(".about")?.classList.remove("text-link");
-    document.querySelector(".about")?.classList.remove("scale-[1.1]");
+  
   }
   useEffect(()=>{
     if(theme){
     if(theme==='dark'){
-      document.querySelector(".mode")?.classList.add("left-[49%]");
+      document.querySelector(".mode")?.classList.add("left-[49.99%]");
       document.querySelector(".mode")?.classList.remove("left-[0%]");
    
     
   }else{
-    document.querySelector(".mode")?.classList.remove("left-[49%]");
+    document.querySelector(".mode")?.classList.remove("left-[49.99%]");
     document.querySelector(".mode")?.classList.add("left-[0%]");
   }
 }
@@ -38,7 +38,7 @@ export default function Head({ Changetheme,theme }: any) {
         <Link to="/"> AMITH JAYAPRABAN</Link>{" "}
       </p>
       <a
-        className="about outline-none font-[600] transition-[1] self-center md:hover:text-link  text-sm md:text-lg cursor-pointer"
+        className="about outline-none font-[600] transition-[1] self-center  text-sm md:text-lg cursor-pointer"
         onClick={() => {
           nav("/about");
         }}
@@ -47,9 +47,9 @@ export default function Head({ Changetheme,theme }: any) {
       </a>
       <div
         onClick={Changetheme}
-        className="text-gray-600 self-center min-w-[40px] h-[20px]  relative rounded-[150px]    bg-gray-200   md:ml-[2rem] md:mr-2"
+        className="text-gray-600  self-center min-w-[40px] max-w-[40px] h-[20px]  relative rounded-[150px]    bg-gray-100   md:ml-[2rem] md:mr-2"
       >
-       <div className="absolute min-w-[20px] left-[0%] h-[20px]    shadow top-0 transition-[1] z-50  mode rounded-[150px]  text-gray-800 bg-white"></div>
+       <div className="absolute min-w-[20px] max-w-[20px] left-[0%] min-h-[20px]    shadow top-0 transition-[1] z-50  mode rounded-full  text-gray-800 bg-fontcolor"></div>
        
        
       </div>

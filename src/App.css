@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   /* font-family: "Roboto", sans-serif; */
@@ -19,7 +19,13 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-.developer{
+.home {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+}
+.developer {
   font-family: "Poppins", sans-serif;
 }
 .frontend {
@@ -32,10 +38,36 @@ body {
     var(--cyan),
     rgb(17, 44, 252)
   );
+  background-size: 250% 100%;
+  background-position: 100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation:bg  .4s linear 1;
 }
+@keyframes bg {
+  0% {
+  
+    background-position: 0% 100%;
+    background-clip: text;
+  }
+  25% {
+    
+    background-position: 50% 100%;
+    background-clip: text;
+  }
+  50% {
+    
+    background-position: 75% 100%;
+    background-clip: text;
+  }
+  100% {
+    
+    background-position: 100% 100%;
+    background-clip: text;
+  }
+}
+
 .projectname {
   background: linear-gradient(
     -45deg,
@@ -49,14 +81,17 @@ body {
 }
 .frontend_about {
   background: linear-gradient(
-    45deg,
+    120deg,
     var(--fend),
     var(--cyan),
     rgb(17, 44, 252)
   );
+  background-size: 250% 100%;
+  background-position: 100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 .about {
   /* background: var(--fontcolor);
@@ -86,7 +121,7 @@ body {
 .name {
   grid-column-start: header1;
   grid-column-end: header2;
- align-self: flex-end;
+  align-self: flex-end;
   justify-self: start;
 }
 
