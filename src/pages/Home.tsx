@@ -44,7 +44,7 @@ function Home() {
             exit="exit"
             transition={{ duration: 0.03 }}
           >
-            <div className=" flex  m-0 flex-col md:mb-20 cursor-default md:items-start items-center ">
+            <div className=" flex  m-0 flex-col md:mb-20 cursor-default md:items-start items-start ">
               <div className="flex flex-col gap-0 w-[max-content] items-start">
                 <p className="md:ml-[1%] hello mt-[5%] md:mt-0  ml-[1%] lg:ml-[1.3%] font-[600] md:font-[600] text-sm md:text-2xl justify-self-end ">
                   {" "}
@@ -53,7 +53,7 @@ function Home() {
                 <p className="lg:text-[150px] justify-self-start mt-[-5%] md:mt-0  md:text-8xl outline-none p-0  frontend font-[700]  text-[65px]  text-fontcolor">
                   Frontend
                 </p>
-                <p className="developer  mt-[-5%] md:mt-0 justify-self-start font-[700] md:ml-[.5%] lg:ml-[.7%] ml-[1%] frontend md:text-3xl text-2xl lg:text-5xl">
+                <p className="developer  mt-[-5%] md:mt-0 justify-self-start font-[700] md:ml-[.6%] lg:ml-[.8%] ml-[1%] frontend md:text-3xl text-2xl lg:text-5xl">
                 Developer
               </p>
               </div>
@@ -64,7 +64,7 @@ function Home() {
         </section>
 
         <section className="min-h-[50vh] md:min-h-[100vh] md:py-[8rem] py-[2rem] bg-gray-00 md:mt-0   flex flex-col items-center md:gap-2  gap-2  ">
-          <p className=" md:mb-3 mt-3 self-start font-[700] text-fontcolor md:text-4xl text-[28px] lg:text-5xl">
+          <p className="ml-[.6%] md:mb-3 mt-3 self-start font-[700] text-fontcolor md:text-4xl text-[28px] lg:text-5xl">
             Projects
           </p>
           {projects.map((i) => {
