@@ -36,7 +36,7 @@ section {
     45deg,
     var(--fend) 30%,
     var(--cyan) 50%,
-    rgb(17, 44, 252) 90%
+    rgb(5, 108, 234) 90%
   );
   background-size: 250% 100%;
   background-position: 100% 100%;
@@ -45,6 +45,10 @@ section {
   -webkit-text-fill-color: transparent;
   animation:bg  .4s linear 1;
 }
+.hello{
+  font-family: "Poppins", sans-serif;
+}
+
 @keyframes bg {
   0% {
   

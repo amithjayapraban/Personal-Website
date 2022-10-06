@@ -5,7 +5,7 @@ export default function About() {
  
       <div className="w-full   text-fontcolor  overflow-y-hidden  md:px-[160px] py-[4rem]   px-7  text-left text-sm md:text-sm flex flex-col  justify-start items-start ">
           <Transition>
-          <div className=" mr-8 md:mt-20 mt-14 h-[160px]  px-1  flex ">
+          <div className=" mr-8 md:mt-20 mt-14 h-[160px]  px-10  flex ">
             <div className="w-[150px] mb-5 md:mb-10 h-[150px]  ml-[0px]   border-double border-[0px]  border-fontcolor box rounded-[15px] "></div>
 
             <img
@@ -15,7 +15,8 @@ export default function About() {
           </div>
           <div />
 
-          <div className=" mt-5 px-3 gap-5 flex flex-col w-[90%] md:w-[80%]">
+          <div className=" mt-5 px-10 gap-5 flex flex-col w-[95%] md:w-[80%]">
+         
             <p className="frontend_about  md:text-4xl  text-link text-2xl font-[700]  ">
               Front-end developer from Kerala, India.
             </p>
@@ -27,7 +28,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="self-start mt-6 px-3 ml-[0px] cursor-pointer  gap-4 flex justify-start">
+          <div className="self-start mt-6 px-10 ml-[0px] cursor-pointer  gap-4 flex justify-start">
             <a
               href="https://www.linkedin.com/in/amithjayapraban/"
               target="_blank"
