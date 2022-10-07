@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import "./App.css";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Head from "./pages/Head";
@@ -47,6 +47,7 @@ function App() {
   var title="Amith Jayapraban";
   var description="Frontend developer from Kerala, India 🇮🇳";
   return (
+    <HelmetProvider>
     <div
       className="App bg-transparent  overflow-y-hidden
      text-fontcolor  "
@@ -87,6 +88,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </HelmetProvider>
   );
 }
 
