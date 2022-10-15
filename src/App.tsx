@@ -59,7 +59,7 @@ function App() {
 
       <link
         rel="icon"
-        href="/public/amith.webp"
+        href="../amith.webp"
       />
 
       <meta name="theme-color" content="#34c592" />
