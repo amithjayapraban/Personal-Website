@@ -10,7 +10,7 @@ export default function About() {
 
             <img
               className="z-10 rounded-[15px] w-[150px] translate-x-[-135px] translate-y-[15px] md:translate-y-[15px]  mb-5 md:mb-10 h-[150px]"
-              src="/amith.jpeg"
+              src="/amith.webp"
             />
           </div>
           <div />
