@@ -212,3 +212,22 @@ section {
   display: block;
   width: 100%;
 }
+[data-tooltip]{
+  position: relative;
+}
+[data-tooltip]:before {            
+  position : absolute;
+  border-radius: 3px;
+  background: rgb(165, 165, 165);
+  padding: 1px 4px;
+  font-size: 10px;
+  color:var(--primary);
+  bottom: -125%;
+  left: 0%;
+   content : attr(data-tooltip);
+   opacity : 0;
+
+}
+[data-tooltip]:hover:before {        
+  opacity : 1;
+}

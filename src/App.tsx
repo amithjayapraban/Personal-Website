@@ -49,7 +49,7 @@ function App() {
   return (
     <HelmetProvider>
     <div
-      className="App bg-transparent  overflow-y-hidden
+      className="App bg-transparent  overflow-y-hidden 
      text-fontcolor  "
     >
       <Helmet>

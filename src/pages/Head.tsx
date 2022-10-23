@@ -23,10 +23,10 @@ export default function Head({ Changetheme, theme }: any) {
     if (theme) {
       if (theme === "dark") {
         document.querySelector(".mode")?.classList.add("left-[49.99%]");
-        document.querySelector(".mode")?.classList.remove("left-[0%]");
+        document.querySelector(".mode")?.classList.remove("left-[1%]");
       } else {
         document.querySelector(".mode")?.classList.remove("left-[49.99%]");
-        document.querySelector(".mode")?.classList.add("left-[0%]");
+        document.querySelector(".mode")?.classList.add("left-[1%]");
       }
     }
   }, [theme]);
@@ -51,9 +51,9 @@ export default function Head({ Changetheme, theme }: any) {
       </a>
       <div
         onClick={Changetheme}
-        className="text-gray-600 hidden md:flex self-center min-w-[40px] max-w-[40px] h-[20px]  relative rounded-[150px]    bg-gray-100   md:ml-[2rem] md:mr-2"
+        className="text-gray-600  self-center min-w-[40px] max-w-[40px] h-[20px]  relative rounded-[150px]    bg-gray-100   ml-[2rem] md:mr-2"
       >
-        <div className="absolute min-w-[20px] max-w-[20px] left-[0%] min-h-[20px]  outline-none border-[1px]  shadow top-0 transition-[1] z-50  mode rounded-full  text-gray-800 "></div>
+        <div className="absolute   min-w-[20px] max-w-[20px] left-[1%] min-h-[20px] max-h-[20px] outline-none border-[1px] bg-primary  shadow top-0 transition-[1] z-50  mode rounded-full  text-gray-800 "></div>
       </div>
     </div>
   );
