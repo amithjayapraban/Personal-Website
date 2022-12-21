@@ -124,7 +124,7 @@ section {
 .head {
   /* position: absolute;
   top: 0px; */
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(0px);
   font-family: "Poppins", sans-serif;
   display: grid;
   grid-auto-flow: row;

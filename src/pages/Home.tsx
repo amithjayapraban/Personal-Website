@@ -16,6 +16,12 @@ function Home() {
   };
   const projects = [
     {
+      name: "iP2P",
+      desc: "Peer to peer image transfer",
+      tags: ["WebRTC",  "React","Tailwind CSS","Firebase",],
+      link: "https://ip2p.vercel.app",
+    },
+    {
       name: "Sorah",
       desc: "MERN Stack Chat Application",
       tags: ["React", "Express", " Socket.io", " MongoDB"],
@@ -27,6 +33,8 @@ function Home() {
       tags: ["React", "DraftJs", " Supabase"],
       link: "https://nota-nu.vercel.app",
     },
+   
+    
   ];
 
   return (
@@ -54,17 +62,15 @@ function Home() {
                   Frontend
                 </p>
                 <p className="developer  mt-[-5%] md:mt-0 justify-self-start font-[700] md:ml-[.6%] lg:ml-[.8%] ml-[1%] frontend md:text-3xl text-2xl lg:text-5xl">
-                Developer
-              </p>
+                  Developer
+                </p>
               </div>
-
-             
             </div>
           </motion.div>
         </section>
 
-        <section className="min-h-[50vh] md:min-h-[100vh] md:py-[8rem] py-[2rem] bg-gray-00 md:mt-0   flex flex-col items-center md:gap-2  gap-2  ">
-          <p className="ml-[.6%] md:mb-3 mt-3 self-start font-[700] text-fontcolor md:text-4xl text-[28px] lg:text-5xl">
+        <section className="min-h-[50vh]   md:p y-[8rem] py-[2rem] bg-gray-00 md:mt-0  flex flex-col items-center md:gap-1  gap-2  ">
+          <p className="ml-[.6%] md:mb-3 mt-3 md:mt-7 self-start font-[700] text-fontcolor md:text-4xl text-[28px] lg:text-5xl">
             Projects
           </p>
           {projects.map((i) => {
@@ -74,17 +80,17 @@ function Home() {
                 target="_blank"
                 className="rounded transition-[1]   w-[100%] md:self-start md:w-[60%]"
               >
-                <div className="  md:h-[200px] h-[130px]  z-10 rounded self-start  text-fontcolor text-xs flex flex-col justify-center   py-5 md:px-3 px-3 text-left  ">
+                <div className="  md:h-[170px] h-[130px]  z-10 rounded self-start  text-fontcolor text-xs flex flex-col justify-center   py-5 md:px-3 px-3 text-left  ">
                   <h1 className="md:text-3xl text-2xl projectname font-[700] text-link ">
                     {i.name}{" "}
                   </h1>{" "}
                   <p className="text-fontcolor text-sm font-[600] mb-2">
                     {i.desc}
                   </p>{" "}
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 md:gap-3">
                     {i.tags.map((t: any) => {
                       return (
-                        <div className="bg-card fronten p-1  rounded-[4px]">
+                        <div className="bg-card fronten p-1 md:px-2  rounded-[4px]">
                           {t}
                         </div>
                       );
