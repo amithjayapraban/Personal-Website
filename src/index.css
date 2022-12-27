@@ -16,7 +16,7 @@
   --card:#dddddd;;
 }
 html[data-theme="dark"] {
-  --primary: #1a191d;
+  --primary: #171718;
   /* --shadow: rgb(25, 109, 255); */
   --fontcolor: #ffffff;
   --display: none;

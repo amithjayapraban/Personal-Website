@@ -1,15 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./App.css";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Head from "./pages/Head";
@@ -44,50 +38,49 @@ function App() {
   }
   var type = "article";
   var name = "Amith Jayapraban";
-  var title="Amith Jayapraban";
-  var description="Frontend developer from Kerala, India 🇮🇳";
+  var title = "Amith Jayapraban";
+  var description = "Frontend developer from Kerala, India 🇮🇳";
   return (
     <HelmetProvider>
-    <div
-      className="App bg-transparent  overflow-y-hidden 
+      <div
+        className="App bg-transparent  overflow-y-hidden 
      text-fontcolor  "
-    >
-      <Helmet>
-      <title>{title} </title>
-      <meta name="description" content={description} />
-      <meta charSet="utf-8" />
+      >
+        <Helmet>
+          <title>{title} </title>
+          <meta name="description" content={description} />
+          <meta charSet="utf-8" />
 
-      <link
-        rel="icon"
-        href="../amith.webp"
-      />
+          <link rel="icon" href="../amith.webp" />
 
-      <meta name="theme-color" content="#34c592" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="robots" content="index,follow" />
-      <meta name="googlebot" content="index,follow" />
-      <link rel="canonical" href="http://amithjayapraban.tk" />
+          <meta name="theme-color" content="#34c592" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta name="robots" content="index,follow" />
+          <meta name="googlebot" content="index,follow" />
+          <link rel="canonical" href="http://amithjayapraban.tk" />
 
-     
-      <meta property="og:type" content={type} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-    
-      <meta name="twitter:creator" content={name} />
-      <meta name="twitter:card" content={type} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-    </Helmet>
+          <meta property="og:type" content={type} />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
 
-      <Router>
-        <Head Changetheme={Changetheme} theme={theme} />
+          <meta name="twitter:creator" content={name} />
+          <meta name="twitter:card" content={type} />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={description} />
+        </Helmet>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Router>
-    </div>
+        <Router>
+          <Head Changetheme={Changetheme} theme={theme} />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Router>
+      </div>
     </HelmetProvider>
   );
 }

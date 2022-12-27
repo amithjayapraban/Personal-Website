@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Transition from "./Transition";
 export default function Foot() {
   return (
     <div className="flex links md:mb-3 mb-1 gap-3 self-center foot text-[14px]  justify-center ">

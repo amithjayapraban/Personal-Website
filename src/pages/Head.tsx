@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Transition from "./Transition";
+
 import { useNavigate } from "react-router-dom";
 
 export default function Head({ Changetheme, theme }: any) {
   const nav = useNavigate();
   let path = window.location.pathname;
-  useEffect(()=>{
-    
-  
+  useEffect(() => {
     if (path === "/about") {
       document.querySelector(".about")?.classList.add("text-link");
       document.querySelector(".back")?.classList.remove("hidden");
@@ -17,8 +15,8 @@ export default function Head({ Changetheme, theme }: any) {
       document.querySelector(".about")?.classList.remove("text-link");
       document.querySelector(".back")?.classList.add("hidden");
     }
-  },[ path])
- 
+  }, [path]);
+
   useEffect(() => {
     if (theme) {
       if (theme === "dark") {
@@ -32,11 +30,25 @@ export default function Head({ Changetheme, theme }: any) {
   }, [theme]);
 
   return (
-    <div className="head  p-7 md:p-10 md:px-[160px] md:py-[30px]  ">
+    <div className="head bg-primary p-7 md:p-10 md:px-[160px] md:py-[30px]  ">
       <a className="back px-1 max-w-[max-content] rounded-[4px] hidden font-[600] outline-none self-center justify-self-start text-sm md:text-lg">
         {" "}
         <Link to="/">
-        <svg clip-rule="evenodd" fill="var(--fontcolor)" width="20" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z" fill-rule="nonzero"/></svg>
+          <svg
+            clip-rule="evenodd"
+            fill="var(--fontcolor)"
+            width="20"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z"
+              fill-rule="nonzero"
+            />
+          </svg>
           {/* AMITH <br/> */}
           {/* <p className="text-xs font-[300]">JAYAPRABAN</p> */}
         </Link>{" "}

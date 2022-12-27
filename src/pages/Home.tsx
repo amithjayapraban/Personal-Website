@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
-// import './Home.css'
 import Transition from "./Transition";
 import { motion } from "framer-motion";
-import Foot from "./Foot";
-import ScrollToTop from "../ScrollToTop";
+
 function Home() {
   function handleScroll() {
     var a: any = document.getElementById("section1");
@@ -18,7 +15,7 @@ function Home() {
     {
       name: "iP2P",
       desc: "Peer to peer image transfer",
-      tags: ["WebRTC",  "React","Tailwind CSS","Firebase",],
+      tags: ["WebRTC", "React", "Tailwind CSS", "Firebase"],
       link: "https://ip2p.vercel.app",
     },
     {
@@ -33,8 +30,6 @@ function Home() {
       tags: ["React", "DraftJs", " Supabase"],
       link: "https://nota-nu.vercel.app",
     },
-   
-    
   ];
 
   return (
