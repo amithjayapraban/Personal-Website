@@ -163,12 +163,11 @@ let skills=['HTML',
   @import url('https://fonts.googleapis.com/css2?family=Monsterrat&display=swap');
   .main{
     font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-    background: linear-gradient(
-    -188deg,
-    #AFE4C9 2%,
-    #f7e5b8 10%,
-    var(--primary) 40%
-  );
+    /* background: linear-gradient(
+    -185deg,
+    #f1806f  1%,
+    var(--primary) 70%
+  ); */
 background-size: 100% 30%;
 background-repeat: no-repeat;
 
