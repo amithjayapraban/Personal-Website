@@ -32,24 +32,26 @@
 </script>
 
 <main
-  class="main   h-screen p-16 md:px-0  py-32 md:py-32 flex flex-col items-center  text-fontcolor "
+  class="main h-screen p-16 md:w-[100vw] md:px-0 py-0 md:py-0 flex flex-col items-center text-fontcolor"
 >
-  <div class="wrapper flex items-center flex-col gap-6 md:gap-8">
-    <section class="w-full">
-      <h1 class="text-link md:text-xl font-bold font-['spinnaker',sans-serif]">
+  <div
+    class="wrapper h-full md:w-[55vw] w-[80vw] justify-center flex items-center flex-col gap-8 md:gap-10"
+  >
+    <section class="w-full section1">
+      <h1 class="grad md:text-xl font-bold font-['spinnaker',sans-serif]">
         Amith Jayapraban
       </h1>
-      <h3 class="text-[.9rem] title md:text-xl mt-2">
+      <h3 class="text-[.9rem] title md:text-xl mt-3">
         Frontend developer from Kerala, India.
       </h3>
-      <h6 class="text-[.8rem] md:text-sm mt-4">
+      <h6 class="text-[.8rem] md:text-sm mt-2">
         Currently pursuing MCA from College of Engineering, Trivandrum. <br />
         Passionate about Web and Photography. <br />
         Loves minimalistic designs.
       </h6>
 
       <div
-        class=" self-start mt-4 ml-[0px] cursor-pointer  gap-4 flex justify-start"
+        class=" self-start mt-4 ml-[0px] cursor-pointer gap-8 flex justify-start"
       >
         <a
           href="https://github.com/amithjayapraban"
@@ -136,23 +138,23 @@
         </a>
       </div>
     </section>
-    <section class="gap-4 flex flex-col w-full ">
-      <h1 class="text-md  md:text-xl ">Projects</h1>
+    <section class="gap-6 flex flex-col w-full">
+      <h1 class="text-md md:text-xl">Projects</h1>
       {#each projects as i}
         <a
           href={`${i.link}`}
           target="_blank"
-          class="rounded transition-[1]   w-[100%] md:self-start "
+          class="rounded transition-[1]  md:self-start"
         >
-          <div class="text-fontcolor flex justify-between items-center   ">
+          <div class="text-fontcolor flex flex-col justify-between items-start">
             <h1
-              class="md:text-md text-sm mb-[.1rem] self-justify-start text-left "
+              class="md:text-md text-sm mb-[.1rem] self-justify-start text-left"
             >
               {i.name}
             </h1>
 
-            <div class="flex  flex-col  flex-wrap gap-2 text-right">
-              <p class="text-fontcolor text-xs  ">
+            <div class="flex flex-col flex-wrap gap-2 text-right">
+              <p class="text-fontcolor text-xs">
                 {i.desc}
               </p>
               <!-- <div class="flex flex-wrap gap-2 md:gap-3">
@@ -168,13 +170,11 @@
         </a>
       {/each}
     </section>
-    <section class="gap-4 flex flex-col w-full ">
-      <h1 class="text-md md:text-xl ">Skills</h1>
-      <div class="flex  flex-wrap gap-2 md:gap-4">
+    <section class="gap-4 flex flex-col w-full">
+      <h1 class="text-md md:text-xl">Skills</h1>
+      <div class="flex flex-wrap gap-3 md:gap-6">
         {#each skills as i}
-          <p
-            class="text-fontcolor text-xs b g-fontcolor text-prim ary  rounded  "
-          >
+          <p class="text-fontcolor text-xs b g-fontcolor text-prim ary rounded">
             {i}
           </p>
         {/each}
@@ -184,16 +184,25 @@
 </main>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap");
-
+  @import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
   .main {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    /* background: linear-gradient(
-    -185deg,
-    #f1806f  1%,
-    var(--primary) 70%
-  ); */
-    background-size: 100% 30%;
-    background-repeat: no-repeat;
+    font-family: "Spinnaker", sans-serif;
+    /* background-image: url(/public/Grad_md.webp);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-size: 150% 150%;
+    background-position: top center;
+    background-repeat: no-repeat; */
+  }
+
+  .grad {
+    /* background-image: url(/public/Grad_md.webp);
+    background-size: cover; */
+    /* background-position: 30% 60%; */
+    /* background-size: 100% 100%; */
+    /* background-clip: text; */
+    /* background-repeat: no-repeat; 
+    color: transparent;
+    -webkit-background-clip: text; */
   }
 </style>
