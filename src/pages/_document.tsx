@@ -3,7 +3,6 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <title>Amith Jayapraban</title>
       <meta
         name="google-site-verification"
         content="fHH5_FXGb1V5pPj1JYgP8L87OSa3yDjwVBoA8SVr_Fw"
