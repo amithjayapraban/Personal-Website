@@ -24,7 +24,7 @@ export default function Home() {
       </section>
       <section className="wrapper self-start bg-grey font-semibold rounded p-6  w-auto h-full  flex  flex-col gap-2">
         <h1 className="grad  md:text-lg text-text_h font-bold font-['spinnaker',sans-serif]">
-          Hey👋, I'm Amith Jayapraban
+          Hey👋, I&apos;m Amith Jayapraban
         </h1>
         <h3 className="text-sm  font-semibold title   ">
           Frontend developer from Kerala, India 🇮🇳

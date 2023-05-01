@@ -27,7 +27,7 @@ export default function Projects() {
 
       {projects.map((i: any) => {
         return (
-          <a
+          <a key={i}
             href={`${i.link}`}
             target="_blank"
             className="rounded bg-grey p-4 w-[80%] transition-[1] md:self-start"
@@ -42,7 +42,7 @@ export default function Projects() {
               </div>
               <div className="flex font-semibold text-xs opacity-[60%] flex-wrap gap-2 text-left">
                 {i.tags.map((t: any) => {
-                  return <p>{t}</p>;
+                  return <p key={t}>{t}</p>;
                 })}
               </div>
             </div>
