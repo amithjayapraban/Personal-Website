@@ -14,9 +14,7 @@ export default function Home() {
   ];
   return (
     <main className=" p-4 py-16 flex flex-col gap-2 items-center text-fontcolor">
-      
-
-      <Card p={"p-6"} w={"w-auto"}>
+      <Card p={"p-1"} w={"w-auto"}>
         <Image
           src="/Amith.jpg"
           width="128"
@@ -25,19 +23,22 @@ export default function Home() {
           alt="Amith's photo"
           priority
         />
-        <h1 className="grad  md:text-lg text-text_h font-bold font-['spinnaker',sans-serif]">
+      </Card>
+
+      <Card p={"p-6"} w={"w-auto"}>
+        <h1 className="grad  md:text-lg text-text_h font-['spinnaker',sans-serif]">
           Hey👋, I&apos;m Amith Jayapraban
         </h1>
         <h3 className="text-sm  font-semibold title   ">
           Frontend developer from Kerala, India 🇮🇳
         </h3>
 
-        <h6 className="text-sm ">
+        <p className="text-sm font-normal">
           Currently pursuing MCA from College of Engineering, Trivandrum.
           <br />
           Passionate about Web and Photography. <br />
           Loves minimalistic designs.
-        </h6>
+        </p>
 
         <div className=" self-start items-center ml-[0px] cursor-pointer gap-8 flex justify-start">
           <a
