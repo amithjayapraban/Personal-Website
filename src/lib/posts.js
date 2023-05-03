@@ -6,7 +6,6 @@ const postsDirectory = path.join(process.cwd(), "posts");
 console.log(fs.readdirSync(postsDirectory),'zxzx');
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
-  if(fileNames.length>1){
   const allPostsData = fileNames.map((fileName) => {
    
     const slug = fileName.replace(/\.md$/, "");
@@ -23,7 +22,7 @@ export function getSortedPostsData() {
     };
   
   });
-  
+
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
@@ -31,8 +30,5 @@ export function getSortedPostsData() {
       return -1;
     }
   });
-}
-else{
-  return null
-}
+  
 }
