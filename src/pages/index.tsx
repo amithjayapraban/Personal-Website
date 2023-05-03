@@ -14,7 +14,9 @@ export default function Home() {
   ];
   return (
     <main className=" p-4 py-16 flex flex-col gap-2 items-center text-fontcolor">
-      <Card p={"p-1"} w={"w-auto"}>
+      
+
+      <Card p={"p-6"} w={"w-auto"}>
         <Image
           src="/Amith.jpg"
           width="128"
@@ -23,9 +25,6 @@ export default function Home() {
           alt="Amith's photo"
           priority
         />
-      </Card>
-
-      <Card p={"p-6"} w={"w-auto"}>
         <h1 className="grad  md:text-lg text-text_h font-bold font-['spinnaker',sans-serif]">
           Hey👋, I&apos;m Amith Jayapraban
         </h1>
