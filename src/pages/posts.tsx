@@ -21,8 +21,8 @@ export default function Directory({ allPostsData }: any) {
       <ul className="flex flex-col  h-full gap-2">
         {allPostsData.length > 0 &&
           allPostsData.map(({ slug, date, title }: any) => (
-            <Card p={"p-4 py-6"} w={"w-full"}>
-              <li className="flex text-xs items-center justify-between" key={slug}>
+            <Card key={slug} p={"p-4 py-6"} w={"w-full"}>
+              <li className="flex text-xs items-center justify-between">
                 <Link className="text-sm" href={`/posts/${slug}`}>
                   {title}
                 </Link>
