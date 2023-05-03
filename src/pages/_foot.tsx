@@ -17,10 +17,20 @@ export default function Foot() {
       setText("~ portfolio$ cd  Projects");
       setRpath("/projects");
     }
+    if (path === "/posts") {
+      setText("~ portfolio$ cd  Home");
+      setRpath("/");
+    }
+    let pattern = /[/]posts[/]/;
+    if (path?.match(pattern)) {
+      setText("~ portfolio$ cd  Posts");
+      setRpath("/posts");
+    }
+    
   }, [path]);
   return (
-    <div className="w-full absolute bottom-8  text-fontcolor font-medium flex items-end justify-end gap-3    px-4  ">
-      <div className="flex justify-between  items-center rounded bg-grey p-4 border w-full transition-[1] ">
+    <div className="w-full absolute bottom-8  text-fontcolor font-medium flex items-end justify-end gap-3 z-40   px-4  ">
+      <div className="flex justify-between  items-center rounded bg-white p-4 border w-full transition-[1] ">
         <p className="opacity-50 cursor-default">{text}</p>
         <Link href={rpath}>
           <img src="/chevron-right-lg.svg" alt="enter" />

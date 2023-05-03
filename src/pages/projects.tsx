@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../components/Card";
 
 export default function Projects() {
   let projects: any = [
@@ -27,26 +28,31 @@ export default function Projects() {
 
       {projects.map((i: any) => {
         return (
-          <a key={i}
-            href={`${i.link}`}
-            target="_blank"
-            className="rounded bg-grey p-4 w-[80%] transition-[1] md:self-start"
-          >
-            <div className="text-fontcolor flex flex-col justify-between items-start">
-              <h1 className="md:text-[1.2rem]  font-bold mb-[.1rem] self-justify-start text-left">
-                {i.name}
-              </h1>
+          <Card p={"p-4"} w={'w-full'}>
+            <a
+              key={i.name}
+              href={`${i.link}`}
+              target="_blank"
+              className="w-full"
+            >
+              <div className="text-fontcolor flex flex-col justify-between items-start">
+                <h1 className="md:text-[1.2rem]  font-bold mb-[.1rem] self-justify-start text-left">
+                  {i.name}
+                </h1>
 
-              <div className="flex flex-col flex-wrap gap-2 text-right">
-                <p className="text-fontcolor font-semibold text-xs">{i.desc}</p>
+                <div className="flex flex-col flex-wrap gap-2 text-right">
+                  <p className="text-fontcolor font-semibold text-xs">
+                    {i.desc}
+                  </p>
+                </div>
+                <div className="flex font-semibold text-xs opacity-[60%] flex-wrap gap-2 text-left">
+                  {i.tags.map((t: any) => {
+                    return <p key={t}>{t}</p>;
+                  })}
+                </div>
               </div>
-              <div className="flex font-semibold text-xs opacity-[60%] flex-wrap gap-2 text-left">
-                {i.tags.map((t: any) => {
-                  return <p key={t}>{t}</p>;
-                })}
-              </div>
-            </div>
-          </a>
+            </a>
+          </Card>
         );
       })}
     </section>

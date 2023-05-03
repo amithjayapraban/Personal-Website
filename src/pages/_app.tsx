@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Amith Jayapraban</title>
       </Head>
-      <div className="md:flex relative h-full md:self-center md:justify-self-center md:flex-col  md:w-[60%] lg:w-[50%]">
+      <div className="flex relative h-full  self-center justify-self-center flex-col  md:w-[60%] lg:w-[50%]">
         <Nav />
         <Component {...pageProps} />
         <Foot />
