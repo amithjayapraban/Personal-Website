@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
   --primary: #1a1b22;
-  --text_h: #5d5fef;
+  --text_h: #59ffd3;
   --fontcolor: rgba(0, 0, 0, 0.7);
   --grey: rgba(0, 0, 0, 0.03);
   --display: unset;
@@ -16,15 +16,19 @@
   -webkit-font-smoothing: antialiased;
 }
 body {
+  background: white;
+  opacity: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.031) 1px, transparent 1px),
+    linear-gradient(to right, rgba(0, 0, 0, 0.031) 1px, transparent 1px);
+  background-size: 100px 100px;
+
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
-  background: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .active {
-  color: var(--text_h);
 }
