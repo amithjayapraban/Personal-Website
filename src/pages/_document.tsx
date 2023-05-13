@@ -7,10 +7,6 @@ export default function Document() {
         name="google-site-verification"
         content="fHH5_FXGb1V5pPj1JYgP8L87OSa3yDjwVBoA8SVr_Fw"
       />
-      <meta
-        name="description"
-        content="Frontend developer from Kerala, India 🇮🇳"
-      />
       <link rel="icon" href="/Amith.jpg" />
       <meta name="theme-color" content="var(--primary)" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

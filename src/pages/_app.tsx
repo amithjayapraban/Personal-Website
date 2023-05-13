@@ -11,9 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Amith Jayapraban</title>
         <meta
           name="description"
-          content="Frontend developer from Kerala, India."
+          content="Frontend developer from Kerala, India 🇮🇳"
         />
-        <meta property="og:site_name" content="Colby Fayock" />
         <meta property="og:title" content="Amith Jayapraban" />
         <meta
           property="og:description"
