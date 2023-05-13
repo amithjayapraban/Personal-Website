@@ -29,7 +29,7 @@ export default function Home() {
         width="128"
         className="rounded-3xl border-2 border-fontcolor grayscale self-start "
         height="128"
-        alt="Amith's photo"
+        alt="Amith Jayapraban"
         priority
       />
       <Card p={"p-4"} w={"w-auto font-semibold  bg-text_h"}>
