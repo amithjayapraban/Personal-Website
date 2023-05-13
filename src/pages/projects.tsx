@@ -30,7 +30,12 @@ export default function Projects() {
       {projects.map((i: any) => {
         return (
           // <Card key={i.name} p={"p-4"} w={"md:w-[50%] w-full"}>
-          <a href={`${i.link}`} target="_blank" className="w-full p-4">
+          <a
+            key={i.name}
+            href={`${i.link}`}
+            target="_blank"
+            className="w-full p-4"
+          >
             <div className="text-fontcolor flex flex-col justify-between items-start">
               <h1 className="md:text-[1.2rem]  font-bold mb-[.1rem] self-justify-start text-left">
                 {i.name}
