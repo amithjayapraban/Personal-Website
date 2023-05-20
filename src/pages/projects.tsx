@@ -21,6 +21,12 @@ export default function Projects() {
       tags: ["React", "DraftJs", " Supabase"],
       link: "https://nota-nu.vercel.app",
     },
+{
+      name: "Sorting Algorithm Visualiser",
+      desc: "Visualises some common sorting algorithms",
+      tags: ["React", "Tailwind CSS"],
+      link: "https://sort-algorithm-visualiser.vercel.app/",
+    },
   ];
   return (
     <section className="gap-2 overflow-scroll flex flex-col py-16 p-4 text-fontcolor">
