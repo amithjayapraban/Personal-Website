@@ -22,8 +22,8 @@ export default function Projects() {
       link: "https://nota-nu.vercel.app",
     },
 {
-      name: "Sorting Algorithm Visualiser",
-      desc: "Visualises some common sorting algorithms",
+      name: "Algo Visualiser",
+      desc: "Visualizes some common sorting algorithms",
       tags: ["React", "Tailwind CSS"],
       link: "https://sort-algorithm-visualiser.vercel.app/",
     },
