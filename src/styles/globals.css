@@ -32,3 +32,38 @@ body {
 }
 .active {
 }
+
+code {
+  font-size: 0.8rem;
+ 
+  border-radius: 3px !important;
+  position: relative;
+}
+
+:not(div) > code{
+ color: #ff3d3d;
+ font-weight:bold;
+ background:#ffebeb;
+  padding: .1rem 0.1rem;
+}
+
+pre > div{
+   border-radius: .25rem !important;
+  padding: 0.7rem 0.7rem;
+
+}
+blockquote {
+  border-radius: .25rem !important;
+  
+    margin: 0;
+    padding: 1em;
+    background: #eee ;
+}
+
+
+@media only screen and (min-width: 1020px) {
+  pre{
+/* width:70%; */
+}
+ 
+}

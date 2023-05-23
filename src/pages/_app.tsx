@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://amith.tech" />
         <meta property="og:image" content="/Amith.jpg" />
       </Head>
-      <div className="flex h-screen  relative  self-center justify-self-center flex-col  md:w-[60%] lg:w-[50%]">
+      <div className="flex h-screen  relative  self-center justify-self-center flex-col  md:w-[75%] ">
         <Nav />
         <Component {...pageProps} />
         <Foot />

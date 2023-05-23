@@ -11,19 +11,19 @@ export default function Projects() {
     },
     {
       name: "Sorah",
-      desc: "MERN Stack Chat Application",
+      desc: "MERN Stack chat application",
       tags: ["React", "Express", " Socket.io", " MongoDB"],
       link: "https://sorah.vercel.app",
     },
     {
       name: "Nota",
-      desc: "Note Taking App",
+      desc: "Note taking app",
       tags: ["React", "DraftJs", " Supabase"],
       link: "https://nota-nu.vercel.app",
     },
 {
       name: "Algo Visualiser",
-      desc: "Visualizes some common sorting algorithms",
+      desc: "Visualiser for some common sorting algorithms",
       tags: ["React", "Tailwind CSS"],
       link: "https://sort-algorithm-visualiser.vercel.app/",
     },
@@ -42,7 +42,7 @@ export default function Projects() {
             target="_blank"
             className="w-full p-4"
           >
-            <div className="text-fontcolor flex flex-col justify-between items-start">
+            <div className="text-fontcolor gap-1 flex flex-col justify-between items-start">
               <h1 className="md:text-[1.2rem]  font-bold mb-[.1rem] self-justify-start text-left">
                 {i.name}
               </h1>
