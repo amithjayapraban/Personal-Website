@@ -2,7 +2,7 @@
 date: May 23, 2023
 title: Javascript Closure
 id: 1
-socialImage: closure.png
+socialImage: Closure.png
 publish : true
 ---
 Before going into **Closure**, let's first build a simple counter.
