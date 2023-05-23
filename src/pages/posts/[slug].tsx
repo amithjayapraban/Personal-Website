@@ -75,11 +75,13 @@ export default function Post({ frontmatter, content }: any) {
               return !inline && match ? (
                 <SyntaxHighlighter
                   {...props}
-                  children={String(children).replace(/\n$/, "")}
                   style={tomorrowNight}
                   language={match[1]}
                   PreTag="div"
-                />
+                >
+                  
+                  children={String(children).replace(/\n$/, "")}
+                </SyntaxHighlighter>
               ) : (
                 <code {...props} className={className}>
                   {children}
