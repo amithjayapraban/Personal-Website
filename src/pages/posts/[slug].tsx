@@ -2,8 +2,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import md from "markdown-it";
-import SyntaxHighlighter  from "react-syntax-highlighter";
-import {tomorrowNight} from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import React from "react";
 import Head from "next/head";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
@@ -25,17 +25,15 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps({ params: { slug } }: any) {
   const fileName = fs.readFileSync(`posts/${slug}.md`, "utf-8").toString();
-  const { data: frontmatter,content: content } = matter(fileName);
-  
+  const { data: frontmatter, content: content } = matter(fileName);
+
   return {
     props: {
       frontmatter,
-      content:content,
+      content: content,
     },
   };
 }
-
-
 
 export default function Post({ frontmatter, content }: any) {
   return (
@@ -68,7 +66,6 @@ export default function Post({ frontmatter, content }: any) {
         />
         <ReactMarkdown
           className="markdown-body md:px-12"
-          children={content}
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
@@ -79,7 +76,6 @@ export default function Post({ frontmatter, content }: any) {
                   language={match[1]}
                   PreTag="div"
                 >
-                  
                   children={String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
               ) : (
@@ -89,7 +85,9 @@ export default function Post({ frontmatter, content }: any) {
               );
             },
           }}
-        />
+        >
+          {content}
+        </ReactMarkdown>
       </div>
     </div>
   );
