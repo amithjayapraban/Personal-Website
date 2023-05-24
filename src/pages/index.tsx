@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Card from "../components/Card";
+import Head from 'next/head';
 export default function Home() {
   let skills: any = [
     "HTML",
@@ -13,6 +14,21 @@ export default function Home() {
     "Figma",
   ];
   return (
+<>
+   <Head>
+        <title>Amith Jayapraban</title>
+        <meta
+          name="description"
+          content="Frontend developer from Kerala, India 🇮🇳"
+        />
+        <meta property="og:title" content="Amith Jayapraban" />
+        <meta
+          property="og:description"
+          content="Frontend developer from Kerala, India."
+        />
+        <meta property="og:url" content="https://amith.tech" />
+        <meta property="og:image" content="/Amith.jpg" />
+      </Head>
     <main className=" p-4 py-16 flex overflow-scroll  flex-col gap-6 items-center text-fontcolor">
       {/* <Card p={"p-4"} w={"w-auto"}>
         <Image
@@ -47,5 +63,6 @@ export default function Home() {
         Loves minimalistic designs.
       </p>
     </main>
+</>
   );
 }
