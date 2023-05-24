@@ -28,6 +28,15 @@ export default function Home() {
         />
         <meta property="og:url" content="https://amith.tech" />
         <meta property="og:image" content="/Amith.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@amithjayapraban" />
+        <meta name="twitter:site" content="@amith.tech" />
+        <meta name="twitter:title" content="Amith Jayapraban" />
+        <meta
+          name="twitter:description"
+          content="Frontend developer from Kerala, India."
+        />
+        <meta name="twitter:image" content="/Amith.jpg" />
       </Head>
       <main className=" p-4 py-16 flex overflow-scroll  flex-col gap-6 items-center text-fontcolor">
         {/* <Card p={"p-4"} w={"w-auto"}>
