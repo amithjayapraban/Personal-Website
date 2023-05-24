@@ -48,6 +48,7 @@ export default function Post({ frontmatter, content }: any) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@amithjayapraban" />
+        <meta name="twitter:site" content="@amith.tech" />
         <meta name="twitter:title" content={`${frontmatter.title}`} />
         <meta
           name="twitter:description"
