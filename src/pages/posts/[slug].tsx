@@ -41,7 +41,7 @@ export default function Post({ frontmatter, content }: any) {
       <Head>
         <title>{frontmatter.title}</title>
         
-        <meta property="og:title" content=`${frontmatter.title}`/>
+        <meta property="og:title" content={`${frontmatter.title}`}/>
       
         <meta
           property="og:image"
