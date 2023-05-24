@@ -40,6 +40,14 @@ export default function Post({ frontmatter, content }: any) {
     <div className=" bg-white  md:text-lg w-full flex flex-col overflow-y-scroll py-16 p-4 pb-24  text-fontcolor">
       <Head>
         <title>{frontmatter.title}</title>
+        
+        <meta property="og:title" content=`${frontmatter.title}`/>
+      
+        <meta
+          property="og:image"
+          content={`/post_img/${frontmatter.socialImage}`}
+
+        />
       </Head>
       <div className="w-full flex flex-col md:gap-16 gap-8 ">
         <div className=" w-full flex flex-col md:flex-row md:items-center justify-between">
