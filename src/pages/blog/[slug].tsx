@@ -56,7 +56,7 @@ export default function Post({ frontmatter, content }: any) {
         />
         <meta
           name="twitter:image"
-          content={`/post_img/${frontmatter.socialImage}`}
+          content={`/${frontmatter.socialImage}`}
         />
       </Head>
       <div className="w-full flex flex-col md:gap-16 gap-8 ">
