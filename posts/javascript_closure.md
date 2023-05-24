@@ -3,7 +3,7 @@ date: May 23, 2023
 title: Javascript Closure
 id: 1
 socialImage: Closure.png
-descpription: A Closure retains access to variables in its lexical environment, even after the outer function has finished executing.
+description: A Javascript closure retains access to variables in its lexical environment, even after the outer function has finished executing.
 publish : true
 ---
 Before going into **Closure**, let's first build a simple counter.

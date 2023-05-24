@@ -1,14 +1,11 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import md from "markdown-it";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import React from "react";
 import Head from "next/head";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import Image from "next/image";
-
 const postsDirectory = path.join(process.cwd(), "posts");
 export async function getStaticPaths() {
   const files = fs.readdirSync(postsDirectory);
@@ -37,9 +34,29 @@ export async function getStaticProps({ params: { slug } }: any) {
 
 export default function Post({ frontmatter, content }: any) {
   return (
-    <div className=" bg-white  md:text-lg w-full flex flex-col overflow-y-scroll py-16 p-4 pb-24  text-fontcolor">
+    <div className=" bg-white  md:text-lg w-full flex flex-col overflow-y-scroll md:py-16 py-8 p-4 pb-24  text-fontcolor">
       <Head>
         <title>{frontmatter.title}</title>
+        <meta property="og:title" content={`${frontmatter.title}`} />
+        <meta
+          property="og:image"
+          content={`/post_img/${frontmatter.socialImage}`}
+        />
+        <meta
+          property="og:description"
+          content={`${frontmatter.description}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@amithjayapraban" />
+        <meta name="twitter:title" content={`${frontmatter.title}`} />
+        <meta
+          name="twitter:description"
+          content={`${frontmatter.description}`}
+        />
+        <meta
+          name="twitter:image"
+          content={`/post_img/${frontmatter.socialImage}`}
+        />
       </Head>
       <div className="w-full flex flex-col md:gap-16 gap-8 ">
         <div className=" w-full flex flex-col md:flex-row md:items-center justify-between">
@@ -76,7 +93,7 @@ export default function Post({ frontmatter, content }: any) {
                   language={match[1]}
                   PreTag="div"
                 >
-                {String(children).replace(/\n$/, "")}
+                  {String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
               ) : (
                 <code {...props} className={className}>
