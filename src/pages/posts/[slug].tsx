@@ -50,14 +50,14 @@ export default function Post({ frontmatter, content }: any) {
             {frontmatter.date}
           </p>
         </div>
-        <Image
+        <img
           alt="hero"
           width={150}
           height={150}
           src={`/post_img/${frontmatter.socialImage}`}
           className="object-cover rounded md:hidden w-full aspect-video "
         />
-        <Image
+        <img
           alt="hero"
           width={300}
           height={300}
