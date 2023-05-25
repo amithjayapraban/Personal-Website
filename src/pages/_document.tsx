@@ -12,6 +12,7 @@ export default function Document() {
       <meta name="robots" content="index,follow" />
       <meta name="googlebot" content="index,follow" />
       <link rel="canonical" href="amith.tech" />
+      <link rel="icon" href="/Amith.jpg" />
       <Head />
       <body>
         <Main />

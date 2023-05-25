@@ -38,13 +38,13 @@ export default function Projects() {
           content="Frontend developer from Kerala, India 🇮🇳"
         />
         <link rel="icon" href="/Amith.jpg" />
-        <meta property="og:title" content="Amith Jayapraban" />
-        <meta
+        <meta name="title" property="og:title" content="Amith Jayapraban" />
+        <meta name="description"
           property="og:description"
           content="Frontend developer from Kerala, India."
         />
         <meta property="og:url" content="https://amith.tech" />
-        <meta property="og:image" content="/Amith.jpg" />
+        <meta name="image" property="og:image" content="/Amith.jpg" />
       </Head>
       <section className="gap-2 overflow-scroll flex flex-col py-16 p-4 text-fontcolor">
         <Card p={"p-4 bg-text_h"}>

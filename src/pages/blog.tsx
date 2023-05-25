@@ -26,16 +26,18 @@ export default function Directory({ allPostsData }: any) {
           name="description"
           content="Frontend developer from Kerala, India 🇮🇳"
         />
-        <meta property="og:title" content="Amith Jayapraban" />
+        <meta name="title" property="og:title" content="Amith Jayapraban" />
         <meta
+          name="description"
           property="og:description"
           content="Frontend developer from Kerala, India."
         />
-        <link rel="icon" href="/Amith.jpg" />
-        <meta property="og:image" content="/Amith.jpg" />
+        <meta name="image" property="og:image" content="/Amith.jpg" />
         <meta property="og:url" content="https://amith.tech" />
-        <meta property="og:image" content="/Amith.jpg" />
-        <meta name="twitter:image" content="/Amith.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://amith.vercel.app/Amith.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name=" twitter:image:alt" content="Amith Jayapraban" />
         <meta name="twitter:creator" content="@amithjayapraban" />

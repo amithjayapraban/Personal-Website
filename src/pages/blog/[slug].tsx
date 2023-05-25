@@ -37,8 +37,14 @@ export default function Post({ frontmatter, content }: any) {
     <div className=" bg-white  md:text-lg w-full flex flex-col overflow-y-scroll md:py-16 py-8 p-4 pb-24  text-fontcolor">
       <Head>
         <title>{frontmatter.title}</title>
-        <meta property="og:title" content={`${frontmatter.title}`} />
+
         <meta
+          name="title"
+          property="og:title"
+          content={`${frontmatter.title}`}
+        />
+        <meta
+          name="image"
           property="og:image"
           content={`/post_img/${frontmatter.socialImage}`}
         />
@@ -46,10 +52,15 @@ export default function Post({ frontmatter, content }: any) {
           property="og:description"
           content={`${frontmatter.description}`}
         />
-        <meta property="description" content={`${frontmatter.description}`} />
+        <meta name="author" content="Amith Jayapraban"></meta>
+        <meta
+          name="description"
+           property="description"
+          content={`${frontmatter.description}`}
+        />
         <meta
           name="twitter:image"
-          content={`/post_img/${frontmatter.socialImage}`}
+          content={`https://amith.vercel.app/post_img/${frontmatter.socialImage}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name=" twitter:image:alt" content={`${frontmatter.title}`} />
