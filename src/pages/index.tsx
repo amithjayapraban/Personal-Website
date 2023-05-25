@@ -36,6 +36,7 @@ export default function Home() {
           name="twitter:description"
           content="Frontend developer from Kerala, India."
         />
+        <link rel="canonical" href="amith.tech" />
         <meta name="twitter:image" content="/Amith.jpg" />
       </Head>
       <main className=" p-4 py-16 flex overflow-scroll  flex-col gap-6 items-center text-fontcolor">
