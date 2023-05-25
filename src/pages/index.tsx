@@ -26,7 +26,7 @@ export default function Home() {
           property="og:description"
           content="Frontend developer from Kerala, India."
         />
-        <meta property="og:url" content="https://amith.tech" />
+        <link rel="icon" href="/Amith.jpg" />
         <meta property="og:image" content="/Amith.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@amithjayapraban" />

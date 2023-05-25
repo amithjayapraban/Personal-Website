@@ -37,6 +37,7 @@ export default function Projects() {
           name="description"
           content="Frontend developer from Kerala, India 🇮🇳"
         />
+        <link rel="icon" href="/Amith.jpg" />
         <meta property="og:title" content="Amith Jayapraban" />
         <meta
           property="og:description"

@@ -6,7 +6,7 @@ import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import React from "react";
 import Head from "next/head";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "blog");
 export async function getStaticPaths() {
   const files = fs.readdirSync(postsDirectory);
   const paths = files.map((files) => ({
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
   };
 }
 export async function getStaticProps({ params: { slug } }: any) {
-  const fileName = fs.readFileSync(`posts/${slug}.md`, "utf-8").toString();
+  const fileName = fs.readFileSync(`blog/${slug}.md`, "utf-8").toString();
   const { data: frontmatter, content: content } = matter(fileName);
 
   return {
@@ -46,17 +46,15 @@ export default function Post({ frontmatter, content }: any) {
           property="og:description"
           content={`${frontmatter.description}`}
         />
+        <meta name="twitter:image" content={`/post_img/${frontmatter.socialImage}`} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name=" twitter:image:alt" content={`${frontmatter.title}`} />
         <meta name="twitter:creator" content="@amithjayapraban" />
         <meta name="twitter:site" content="@amith.tech" />
         <meta name="twitter:title" content={`${frontmatter.title}`} />
         <meta
           name="twitter:description"
           content={`${frontmatter.description}`}
-        />
-        <meta
-          name="twitter:image"
-          content={`/${frontmatter.socialImage}`}
         />
       </Head>
       <div className="w-full flex flex-col md:gap-16 gap-8 ">
