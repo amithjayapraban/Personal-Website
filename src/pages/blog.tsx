@@ -31,8 +31,20 @@ export default function Directory({ allPostsData }: any) {
           property="og:description"
           content="Frontend developer from Kerala, India."
         />
+        <link rel="icon" href="/Amith.jpg" />
+        <meta property="og:image" content="/Amith.jpg" />
         <meta property="og:url" content="https://amith.tech" />
         <meta property="og:image" content="/Amith.jpg" />
+        <meta name="twitter:image" content="/Amith.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name=" twitter:image:alt" content="Amith Jayapraban" />
+        <meta name="twitter:creator" content="@amithjayapraban" />
+        <meta name="twitter:site" content="@amith.tech" />
+        <meta name="twitter:title" content="Amith Jayapraban" />
+        <meta
+          name="twitter:description"
+          content="Frontend developer from Kerala, India."
+        />
       </Head>
       <section className="gap-2 overflow-scroll flex flex-col py-16 p-4 text-fontcolor">
         <Card p={"p-4 bg-text_h"}>
