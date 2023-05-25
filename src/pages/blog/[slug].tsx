@@ -46,7 +46,7 @@ export default function Post({ frontmatter, content }: any) {
         <meta
           name="image"
           property="og:image"
-          content={`/post_img/${frontmatter.socialImage}`}
+          content={`https://amith.vercel.app/post_img/${frontmatter.socialImage}`}
         />
         <meta
           property="og:description"
@@ -55,7 +55,7 @@ export default function Post({ frontmatter, content }: any) {
         <meta name="author" content="Amith Jayapraban"></meta>
         <meta
           name="description"
-           property="description"
+          property="description"
           content={`${frontmatter.description}`}
         />
         <meta
