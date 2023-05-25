@@ -46,7 +46,11 @@ export default function Post({ frontmatter, content }: any) {
           property="og:description"
           content={`${frontmatter.description}`}
         />
-        <meta name="twitter:image" content={`/post_img/${frontmatter.socialImage}`} />
+        <meta property="description" content={`${frontmatter.description}`} />
+        <meta
+          name="twitter:image"
+          content={`/post_img/${frontmatter.socialImage}`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name=" twitter:image:alt" content={`${frontmatter.title}`} />
         <meta name="twitter:creator" content="@amithjayapraban" />
