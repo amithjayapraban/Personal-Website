@@ -7,13 +7,13 @@ export default function Projects() {
     {
       name: "iP2P",
       desc: "Peer to peer file transfer",
-      tags: ["WebRTC", "React", "Tailwind CSS", "Firebase"],
+      tags: ["React", "Tailwind", "WebRTC", "WebSockets"],
       link: "https://ip2p.vercel.app",
     },
     {
       name: "Sorah",
       desc: "MERN Stack chat application",
-      tags: ["React", "Express", " Socket.io", " MongoDB"],
+      tags: ["React", "Express", "Socket.io", "MongoDB"],
       link: "https://sorah.vercel.app",
     },
     {
@@ -25,7 +25,7 @@ export default function Projects() {
     {
       name: "Algo Visualiser",
       desc: "Visualiser for some common sorting algorithms",
-      tags: ["React", "Tailwind CSS"],
+      tags: ["React", "Tailwind"],
       link: "https://sort-algorithm-visualiser.vercel.app/",
     },
   ];
