@@ -23,6 +23,12 @@ export default function Projects() {
       link: "https://nota-nu.vercel.app",
     },
     {
+      name: "Artham",
+      desc: "English Malayalam Dictionary",
+      tags: ["React", "IndexedDB", "Tailwind"],
+      link: "https://artham-malayalam.vercel.app/",
+    },
+    {
       name: "Algo Visualiser",
       desc: "Visualiser for some common sorting algorithms",
       tags: ["React", "Tailwind"],
@@ -39,7 +45,8 @@ export default function Projects() {
         />
         <link rel="icon" href="/Amith.jpg" />
         <meta name="title" property="og:title" content="Amith Jayapraban" />
-        <meta name="description"
+        <meta
+          name="description"
           property="og:description"
           content="Frontend developer from Kerala, India."
         />
