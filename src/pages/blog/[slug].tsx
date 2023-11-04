@@ -72,9 +72,9 @@ export default function Post({ frontmatter, content }: any) {
           content={`${frontmatter.description}`}
         />
       </Head>
-      <div className="w-full flex flex-col md:gap-16 gap-8 ">
+      <div className="w-full  flex flex-col md:gap-10 gap-8 ">
         <div className=" w-full flex flex-col md:flex-row md:items-center justify-between">
-          <h1 className="  text-fontcolor  font-extrabold md:text-5xl text-2xl ">
+          <h1 className="  text-fontcolor  font-bold md:text-3xl text-2xl ">
             {frontmatter.title}
           </h1>
           <p className=" text-fontcolor   text-sm font-semibold ">
@@ -90,10 +90,10 @@ export default function Post({ frontmatter, content }: any) {
         />
         <img
           alt="hero"
-          width={300}
-          height={300}
+          width={150}
+          height={150}
           src={`/post_img/${frontmatter.socialImage}`}
-          className="object-cover rounded hidden md:block w-full aspect-[16/6] "
+          className="object-cover md:px-12 rounded hidden md:block w-full aspect-video "
         />
         <ReactMarkdown
           className="markdown-body md:px-12"
