@@ -1,6 +1,6 @@
 ---
 date: Nov 5, 2023
-title: How to sort an array of numbers in javascript?
+title: How to sort an array of numbers in Javascript?
 id: 2
 socialImage: sort.webp
 description: The sort() method performs a lexicographic comparison.
