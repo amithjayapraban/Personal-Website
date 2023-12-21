@@ -5,7 +5,7 @@
 :root {
   --primary: #1a1b22;
   --text_h: #59ffd3;
-  --fontcolor: rgba(0, 0, 0, 0.7);
+  --fontcolor: #000000b3;
   --grey: rgba(0, 0, 0, 0.03);
   --display: unset;
   --mode: "light";
@@ -35,35 +35,32 @@ body {
 
 code {
   font-size: 0.8rem;
- 
+
   border-radius: 3px !important;
   position: relative;
 }
 
-:not(div) > code{
- color: #ff3d3d;
- font-weight:bold;
- background:#ffebeb;
-  padding: .1rem 0.1rem;
+:not(div) > code {
+  color: #ff3d3d;
+  font-weight: bold;
+  background: #ffebeb;
+  padding: 0.1rem 0.1rem;
 }
 
-pre > div{
-   border-radius: .25rem !important;
+pre > div {
+  border-radius: 0.25rem !important;
   padding: 0.7rem 0.7rem;
-
 }
 blockquote {
-  border-radius: .25rem !important;
-  
-    margin: 0;
-    padding: 1em;
-    background: #eee ;
-}
+  border-radius: 0.25rem !important;
 
+  margin: 0;
+  padding: 1em;
+  background: #eee;
+}
 
 @media only screen and (min-width: 1020px) {
-  pre{
-/* width:70%; */
-}
- 
+  pre {
+    /* width:70%; */
+  }
 }
